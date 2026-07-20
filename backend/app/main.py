@@ -1,11 +1,23 @@
 import os
-from fastapi import FastAPI, HTTPException, status, Depends
+from fastapi import FastAPI, HTTPException, status, Depends,Security
 from fastapi.middleware.cors import CORSMiddleware
 from app.api import routes_market, routes_portfolio, routes_analytics
 from app.ingestion import run_daily_ingestion
 from app.analytics.save_metrics import update_all_instrument_metrics
+from fastapi.security import APIKeyHeader
 
 # ... (your existing app setup and CORS middleware stay the same) ...
+# 1. INITIALIZE THE APP FIRST! (Must come before any @app routes)
+app = FastAPI(title="Uncharted Atlas API", version="1.0.0")
+
+# 2. Setup your security header and dependencies
+api_key_header = APIKeyHeader(name="X-Ingestion-Secret", auto_error=False)
+
+def verify_ingestion_secret(api_key: str = Security(api_key_header)):
+    secret = os.getenv("INGESTION_SECRET")
+    if not secret or api_key != secret:
+        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Invalid Ingestion Secret")
+    return api_key
 
 @app.post("/internal/run-ingestion", tags=["Admin & Automation"])
 def trigger_ingestion(secret: str):
