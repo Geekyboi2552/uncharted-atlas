@@ -1,9 +1,9 @@
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, Depends, HTTPException, status, BackgroundTasks
 from sqlalchemy.orm import Session
 from sqlalchemy import text
 from pydantic import BaseModel
 from app.api.deps import get_db, get_current_user
-
+from main import trigger_ingestion
 router = APIRouter(prefix="/portfolios", tags=["Portfolios & Holdings"])
 
 # Pydantic Request Schemas
@@ -45,6 +45,7 @@ def get_user_portfolios(db: Session = Depends(get_db), user: dict = Depends(get_
 def add_holding(
     portfolio_id: int, 
     payload: HoldingCreate, 
+    background_tasks: BackgroundTasks,
     db: Session = Depends(get_db), 
     user: dict = Depends(get_current_user)
 ):
@@ -73,6 +74,7 @@ def add_holding(
         "price": payload.average_buy_price
     }).mappings().first()
     db.commit()
+    background_tasks.add_task(trigger_ingestion)
     return dict(result)
 
 @router.get("/{portfolio_id}/holdings")
