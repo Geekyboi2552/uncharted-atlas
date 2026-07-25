@@ -1,11 +1,11 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { Responsive, WidthProvider, type Layout } from 'react-grid-layout';
+import { Responsive, WidthProvider, type Layout } from 'react-grid-layout/legacy';
 import 'react-grid-layout/css/styles.css';
 import 'react-resizable/css/styles.css';
 
-import { usePortfolios } from '@/lib/hooks';
+import { usePortfolios } from '@/app/lib/hooks';
 import { PortfolioSwitcher } from '@/components/PortfolioSwitcher';
 import { HoldingsTable } from '@/components/HoldingsTable';
 import { MetricsPanel } from '@/components/MetricsPanel';
@@ -13,7 +13,7 @@ import { CorrelationHeatmap } from '@/components/CorrelationHeatmap';
 
 const ResponsiveGridLayout = WidthProvider(Responsive);
 
-const layouts: { lg: Layout[] } = {
+const layouts: { lg: Layout } = {
   lg: [
     { i: 'portfolios', x: 0, y: 0, w: 3, h: 6, minW: 2, minH: 4 },
     { i: 'holdings', x: 3, y: 0, w: 6, h: 6, minW: 4, minH: 4 },

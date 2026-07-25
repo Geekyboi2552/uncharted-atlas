@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { useInstruments } from '@/lib/hooks';
+import { useInstruments } from '@/app/lib/hooks';
 
 interface Props {
   selected: string | null;

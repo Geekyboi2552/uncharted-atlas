@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import type { Portfolio } from '@/lib/types';
-import { useCreatePortfolio } from '@/lib/hooks';
+import type { Portfolio } from '@/app/lib/types';
+import { useCreatePortfolio } from '@/app/lib/hooks';
 
 interface Props {
   portfolios: Portfolio[];

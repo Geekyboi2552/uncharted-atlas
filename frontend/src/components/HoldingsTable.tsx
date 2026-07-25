@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { useHoldings, useAddHolding, useInstruments } from '@/lib/hooks';
+import { useHoldings, useAddHolding, useInstruments } from '@/app/lib/hooks';
 
 interface Props {
   portfolioId: number | null;

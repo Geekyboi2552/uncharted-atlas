@@ -1,7 +1,7 @@
 'use client';
 
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid } from 'recharts';
-import { usePrices } from '@/lib/hooks';
+import { usePrices } from '@/app/lib/hooks';
 
 interface Props {
   ticker: string | null;

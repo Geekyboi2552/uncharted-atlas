@@ -1,6 +1,6 @@
 'use client';
 
-import { usePortfolioAnalytics } from '@/lib/hooks';
+import { usePortfolioAnalytics } from '@/app/lib/hooks';
 
 const LABELS: Record<string, string> = {
   sharpe_ratio: 'Sharpe',

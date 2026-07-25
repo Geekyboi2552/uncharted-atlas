@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { useAuth } from '@/lib/auth-context';
+import { useAuth } from '@/app/lib/auth-context';
 
 export function Navbar() {
   const { user, loading, signOut } = useAuth();

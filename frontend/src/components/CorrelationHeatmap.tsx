@@ -1,7 +1,7 @@
 'use client';
 
-import { useCorrelationMatrix } from '@/lib/hooks';
-import type { CorrelationMatrix } from '@/lib/types';
+import { useCorrelationMatrix } from '@/app/lib/hooks';
+import type { CorrelationMatrix } from '@/app/lib/types';
 
 function isMatrix(data: unknown): data is CorrelationMatrix {
   return !!data && typeof data === 'object' && !('message' in (data as object));
