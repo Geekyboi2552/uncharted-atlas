@@ -79,7 +79,7 @@ def add_holding(
     def run_full_pipeline():
         try:
             print("🚀 Step 1: Starting market data ingestion...")
-            trigger_ingestion() 
+            #trigger_ingestion() 
             
             print("🧠 Step 2: Starting analytics engine...")
             update_all_instrument_metrics()
@@ -91,7 +91,7 @@ def add_holding(
     # --- 4. Triggering the Automation ---
     background_tasks.add_task(run_full_pipeline)
     get_portfolio_analytics(portfolio_id,db)
-    background_tasks.add_task(trigger_ingestion)
+    #background_tasks.add_task(trigger_ingestion)
     return dict(result)
 
 @router.get("/{portfolio_id}/holdings")
