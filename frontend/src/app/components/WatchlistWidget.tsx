@@ -1,19 +1,20 @@
 'use client';
 
 import { useQuery } from '@tanstack/react-query';
-import { fetchFromAPI } from 'frontend/src/app/lib/api.ts';
+import { fetchFromAPI } from '@/app/lib/api';
 
-// Define the shape of your instrument data
+// Matches what GET /market/instruments actually returns (see routes_market.py:
+// "SELECT id, ticker, name FROM instruments" — no asset_class/sector column).
 interface Instrument {
+  id: number;
   ticker: string;
   name: string;
-  asset_class: string;
 }
 
 export default function WatchlistWidget() {
   const { data: instruments, isLoading, error } = useQuery<Instrument[]>({
     queryKey: ['instruments'],
-    queryFn: () => fetchFromAPI('/instruments'),
+    queryFn: () => fetchFromAPI<Instrument[]>('/market/instruments'),
   });
 
   if (isLoading) return <div className="p-4 text-emerald-500 animate-pulse">Loading data streams...</div>;
@@ -28,16 +29,14 @@ export default function WatchlistWidget() {
         <thead className="text-xs text-slate-500 uppercase bg-slate-950/50">
           <tr>
             <th className="px-4 py-2 rounded-tl-sm">Ticker</th>
-            <th className="px-4 py-2">Entity Name</th>
-            <th className="px-4 py-2 rounded-tr-sm">Class</th>
+            <th className="px-4 py-2 rounded-tr-sm">Entity Name</th>
           </tr>
         </thead>
         <tbody>
           {instruments?.map((stock) => (
-            <tr key={stock.ticker} className="border-b border-slate-800/50 hover:bg-slate-800 transition-colors">
+            <tr key={stock.id} className="border-b border-slate-800/50 hover:bg-slate-800 transition-colors">
               <td className="px-4 py-3 font-semibold text-emerald-400">{stock.ticker}</td>
               <td className="px-4 py-3">{stock.name}</td>
-              <td className="px-4 py-3 text-slate-500">{stock.asset_class}</td>
             </tr>
           ))}
         </tbody>
