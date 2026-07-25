@@ -1,37 +1,28 @@
-// frontend/src/app/page.tsx
+import Link from "next/link";
+
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-center gap-8 py-32 px-6 text-center">
-        <div className="flex flex-col items-center gap-4">
-          <span className="text-sm font-medium tracking-wide text-zinc-500 dark:text-zinc-400 uppercase">
-            Uncharted Atlas
-          </span>
-          <h1 className="max-w-xl text-4xl font-semibold leading-tight tracking-tight text-black dark:text-zinc-50 sm:text-5xl">
-            A free portfolio analytics terminal for the Indian market
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Track holdings, compute Sharpe, Sortino, and Treynor ratios, and
-            explore correlations across BSE-listed instruments — no
-            Bloomberg subscription required.
-          </p>
-        </div>
+    <main className="flex min-h-screen flex-col items-center justify-center p-24 bg-slate-950">
+      <div className="z-10 max-w-2xl w-full flex flex-col items-center font-mono text-center">
+        
+        {/* Terminal Header */}
+        <h1 className="text-5xl font-bold text-emerald-500 mb-6 tracking-tight">
+          UNCHARTED ATLAS
+        </h1>
+        
+        <p className="text-slate-400 mb-12 text-lg">
+          Quantitative Analytics & Ingestion Engine v1.0.0
+        </p>
 
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          
-            href="/login"
-            className="flex h-12 items-center justify-center rounded-full bg-black px-6 text-white transition-colors hover:bg-zinc-800 dark:bg-white dark:text-black dark:hover:bg-zinc-200"
-          >
-            Get Started
-          </a>
-          
-            href="/dashboard"
-            className="flex h-12 items-center justify-center rounded-full border border-black/[.1] px-6 transition-colors hover:bg-black/[.04] dark:border-white/[.15] dark:hover:bg-[#1a1a1a]"
-          >
-            View Dashboard
-          </a>
-        </div>
-      </main>
-    </div>
+        {/* Entry Button */}
+        <Link
+          href="/dashboard"
+          className="border-2 border-emerald-500 text-emerald-500 px-8 py-3 text-lg hover:bg-emerald-500 hover:text-slate-950 transition-all duration-200 uppercase tracking-widest font-semibold"
+        >
+          Initialize Workspace
+        </Link>
+        
+      </div>
+    </main>
   );
 }
