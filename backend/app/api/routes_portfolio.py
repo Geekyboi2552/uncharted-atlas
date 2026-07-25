@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy import text
 from pydantic import BaseModel
 from app.api.deps import get_db, get_current_user
-from main import trigger_ingestion
+from app.main import trigger_ingestion
 router = APIRouter(prefix="/portfolios", tags=["Portfolios & Holdings"])
 
 # Pydantic Request Schemas
