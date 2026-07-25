@@ -1,6 +1,6 @@
 import { supabase } from './supabaseClient';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/docs#/';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 
 /**
  * Universal fetch wrapper that automatically attaches the Supabase Auth token.
