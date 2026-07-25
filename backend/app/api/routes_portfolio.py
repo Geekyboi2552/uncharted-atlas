@@ -90,7 +90,6 @@ def add_holding(
 
     # --- 4. Triggering the Automation ---
     background_tasks.add_task(run_full_pipeline)
-    get_portfolio_analytics(portfolio_id,db)
     #background_tasks.add_task(trigger_ingestion)
     return dict(result)
 
