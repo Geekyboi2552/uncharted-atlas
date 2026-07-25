@@ -49,6 +49,7 @@ def add_holding(
     user: dict = Depends(get_current_user)
 ):
     from app.main import trigger_ingestion
+    from app.analytics.save_metrics import update_all_instrument_metrics
     from app.api.routes_analytics import get_portfolio_analytics
     """Add a stock holding to a specific portfolio."""
     # 1. Verify portfolio ownership
@@ -75,6 +76,20 @@ def add_holding(
         "price": payload.average_buy_price
     }).mappings().first()
     db.commit()
+    def run_full_pipeline():
+        try:
+            print("🚀 Step 1: Starting market data ingestion...")
+            trigger_ingestion() 
+            
+            print("🧠 Step 2: Starting analytics engine...")
+            update_all_instrument_metrics()
+            
+            print("✅ Pipeline complete!")
+        except Exception as e:
+            print(f"❌ Background task failed: {e}")
+
+    # --- 4. Triggering the Automation ---
+    background_tasks.add_task(run_full_pipeline)
     get_portfolio_analytics(portfolio_id,db)
     background_tasks.add_task(trigger_ingestion)
     return dict(result)

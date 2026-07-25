@@ -4,6 +4,7 @@ from sqlalchemy import text
 from app.api.deps import get_db, engine
 from app.analytics.correlation import get_correlation_matrix
 
+
 router = APIRouter(prefix="/analytics", tags=["Analytics Engine"])
 
 @router.get("/portfolio/{portfolio_id}")
