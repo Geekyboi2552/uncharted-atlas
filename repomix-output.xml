@@ -1,0 +1,2709 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+backend/
+  app/
+    analytics/
+      __init__.py
+      correlation.py
+      risk_metrics.py
+      save_metrics.py
+      test_analytics.py
+    api/
+      __init__.py
+      deps.py
+      routes_analytics.py
+      routes_market.py
+      routes_portfolio.py
+    ingestion/
+      __init__.py
+      alpha_vantage_client.py
+      run_daily_ingestion.py
+    __init__.py
+    main.py
+  requirements.txt
+cfa notes bawa/
+  (1).DS_Store
+  2025 CFA Level 1 Study Guide.pdf
+  CFA 2025 Level I - AI, PM, Ethics.pdf
+  CFA 2025 Level I - FI, Derivatives.pdf
+  CFA 2025 Level I - FSA, Equity.pdf
+  CFA 2025 Level I - Quants, Eco, CI.pdf
+  DS_Store
+  LM01 Alternative Investment Features, Methods, and Structures IFT Notes.pdf
+  LM01 Derivative Instrument and Derivative Market Features IFT Notes.pdf
+  LM01 Ethics and Trust in the Investment Profession IFT Notes.pdf
+  LM01 Firms and Market Structures IFT Notes.pdf
+  LM01 Fixed-Income Instrument Features IFT Notes.pdf
+  LM01 Introduction to Financial Statement Analysis IFT Notes.pdf
+  LM01 Market Organization and Structure IFT Notes.pdf
+  LM01 Organizational Forms, Corporate Issuer Features, and Ownership IFT Notes.pdf
+  LM01 Portfolio Risk and Return Part I IFT Notes.pdf
+  LM01 Rates and Returns IFT Notes.pdf
+  LM02 Alternative Investment Performance and Returns IFT Notes.pdf
+  LM02 Analyzing Income Statements IFT Notes.pdf
+  LM02 Code of Ethics and Standards of Professional Conduct IFT Notes.pdf
+  LM02 Fixed-Income Cash Flows and Types IFT Notes.pdf
+  LM02 Forward Commitment and Contingent Claim Features and Instruments IFT Notes.pdf
+  LM02 Investors and Other Stakeholders IFT Notes.pdf
+  LM02 Portfolio Risk and Return Part II IFT Notes.pdf
+  LM02 Security Market Indexes IFT Notes.pdf
+  LM02 The Time Value of Money in Finance IFT Notes.pdf
+  LM02 Understanding Business Cycles IFT Notes.pdf
+  LM03 Analyzing Balance Sheets IFT Notes.pdf
+  LM03 Corporate Governance - Conflicts, Mechanisms, Risks, and Benefits IFT Notes.pdf
+  LM03 Derivative Benefits, Risks, and Issuer and Investor Uses IFT Notes.pdf
+  LM03 Fiscal Policy IFT Notes.pdf
+  LM03 Fixed-Income Issuance and Trading IFT Notes.pdf
+  LM03 Guidance for Standards I-VII IFT Notes.pdf
+  LM03 Investments in Private Capital - Equity and Debt IFT Notes.pdf
+  LM03 Market Efficiency IFT Notes.pdf
+  LM03 Portfolio Management An Overview IFT Notes.pdf
+  LM03 Statistical Measures of Asset Returns IFT Notes.pdf
+  LM04 Analyzing Statements of Cash Flows I IFT Notes.pdf
+  LM04 Arbitrage, Replication, and the Cost of Carry in Pricing Derivatives IFT Notes.pdf
+  LM04 Basics of Portfolio Planning and Construction IFT Notes.pdf
+  LM04 Fixed-Income Markets for Corporate Issuers IFT Notes.pdf
+  LM04 Introduction to GIPS IFT Notes.pdf
+  LM04 Monetary Policy IFT Notes.pdf
+  LM04 Overview of Equity Securities IFT Notes.pdf
+  LM04 Probability Trees and Conditional Expectations IFT Notes.pdf
+  LM04 Real Estate and Infrastructure IFT Notes.pdf
+  LM04 Working Capital and Liquidity IFT Notes.pdf
+  LM05 Analyzing Statements of Cash Flows II IFT Notes.pdf
+  LM05 Capital Investments and Capital Allocation IFT Notes.pdf
+  LM05 Company Analysis - Past and Present IFT Notes.pdf
+  LM05 Ethics Application IFT Notes.pdf
+  LM05 Fixed-Income Markets for Government Issuers IFT Notes.pdf
+  LM05 Introduction to Geopolitics IFT Notes.pdf
+  LM05 Natural Resources IFT Notes.pdf
+  LM05 Portfolio Mathematics IFT Notes.pdf
+  LM05 Pricing and Valuation of Forward Contracts IFT Notes.pdf
+  LM05 The Behavioral Biases of Individuals IFT Notes.pdf
+  LM06 Analysis of Inventories IFT Notes.pdf
+  LM06 Capital Structure IFT Notes.pdf
+  LM06 Fixed-Income Bond Valuation - Prices and Yields IFT Notes.pdf
+  LM06 Hedge Funds IFT Notes.pdf
+  LM06 Industry and Competitive Analysis IFT Notes.pdf
+  LM06 International Trade IFT Notes.pdf
+  LM06 Introduction to Risk Management IFT Notes.pdf
+  LM06 Pricing and Valuation of Futures Contracts IFT Notes.pdf
+  LM06 Simulation Methods IFT Notes.pdf
+  LM07 Analysis of Long-Term Assets IFT Notes.pdf
+  LM07 Business Models IFT Notes.pdf
+  LM07 Capital Flows and the FX Market IFT Notes.pdf
+  LM07 Company Analysis - Forecasting IFT Notes.pdf
+  LM07 Estimation and Inference IFT Notes.pdf
+  LM07 Introduction to Digital Assets IFT Notes.pdf
+  LM07 Pricing and Valuation of Interest Rates and Other Swaps IFT Notes.pdf
+  LM07 Yield and Yield Spread Measures for Fixed-Rate Bonds IFT Notes.pdf
+  LM08 Equity Valuation Concepts and Basic Tools IFT Notes.pdf
+  LM08 Exchange Rate Calculations IFT Notes.pdf
+  LM08 Hypothesis Testing IFT Notes.pdf
+  LM08 Pricing and Valuation of Options IFT Notes.pdf
+  LM08 Topics in Long-Term Liabilities and Equity IFT Notes.pdf
+  LM08 Yield and Yield Spread Measures for Floating-Rate Instruments IFT Notes.pdf
+  LM09 Analysis of Income Taxes IFT Notes.pdf
+  LM09 Option Replication Using PutCall Parity IFT Notes.pdf
+  LM09 Parametric and Non-Parametric Tests of Independence IFT Notes.pdf
+  LM09 The Term Structure of Interest Rates- Spot, Par, and Forward Curves IFT Notes.pdf
+  LM10 Financial Reporting Quality IFT Notes.pdf
+  LM10 Interest Rate Risk and Return IFT Notes.pdf
+  LM10 Simple Linear Regression IFT Notes.pdf
+  LM10 Valuing a Derivative Using a One-Period Binomial Model IFT Notes.pdf
+  LM11 Financial Analysis Techniques IFT Notes.pdf
+  LM11 Introduction to Big Data Techniques IFT Notes.pdf
+  LM11 Yield-Based Bond Duration Measures and Properties IFT Notes.pdf
+  LM12 Introduction to Financial Statement Modeling IFT Notes.pdf
+  LM12 Yield-Based Bond Convexity and Portfolio Properties IFT Notes.pdf
+  LM13 Curve-Based and Empirical Fixed-Income Risk Measures IFT Notes.pdf
+  LM14 Credit Risk IFT Notes.pdf
+  LM15 Credit Analysis for Government Issuers IFT Notes.pdf
+  LM16 Credit Analysis for Corporate Issuers IFT Notes.pdf
+  LM17 Fixed-Income Securitization IFT Notes.pdf
+  LM18 Asset-Backed Security (ABS) Instrument and Market Features IFT Notes.pdf
+  LM19 Mortgage-Backed Security (MBS) Instrument and Market Features IFT Notes.pdf
+frontend/
+  public/
+    file.svg
+    globe.svg
+    next.svg
+    vercel.svg
+    window.svg
+  src/
+    app/
+      components/
+        WatchlistWidget.tsx
+      dashboard/
+        layout.tsx
+        page.tsx
+      lib/
+        api.ts
+        auth-context.tsx
+        hooks.ts
+        supabaseClient.ts
+        types.ts
+      login/
+        page.tsx
+      market/
+        [ticker]/
+          page.tsx
+        page.tsx
+      favicon.ico
+      globals.css
+      layout.tsx
+      page.tsx
+      providers.tsx
+    components/
+      CorrelationHeatmap.tsx
+      HoldingsTable.tsx
+      InstrumentList.tsx
+      MetricsPanel.tsx
+      Navbar.tsx
+      PortfolioSwitcher.tsx
+      PriceChart.tsx
+    lib/
+      auth-context.tsx
+      hooks.ts
+      types.ts
+  .gitignore
+  AGENTS.md
+  CLAUDE.md
+  eslint.config.mjs
+  next.config.ts
+  package.json
+  postcss.config.mjs
+  README.md
+  tsconfig.json
+.gitignore
+~$Notes.docx
+Matrix_Club_Deck.pptx
+Notes.docx
+Uncharted_Atlas_Build_Roadmap.md.pdf
+Uncharted_Atlas_Requirements.pdf
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="backend/app/analytics/__init__.py">
+
+</file>
+
+<file path="backend/app/analytics/correlation.py">
+import os
+import pandas as pd
+from sqlalchemy import create_engine, text
+from dotenv import load_dotenv
+
+load_dotenv()
+DATABASE_URL = os.getenv("DATABASE_URL")
+
+def get_correlation_matrix(engine = None) -> pd.DataFrame:
+    """
+    Pulls closing prices for all instruments and returns a daily return correlation matrix.
+    """
+    if engine is None:
+        if not DATABASE_URL:
+            raise ValueError("DATABASE_URL is missing!")
+        engine = create_engine(DATABASE_URL)
+        
+    query = """
+        SELECT i.ticker, dp.date, dp.close 
+        FROM daily_prices dp
+        JOIN instruments i ON dp.instrument_id = i.id
+        ORDER BY dp.date ASC;
+    """
+    
+    # Read directly from Postgres into a Pandas DataFrame
+    df = pd.read_sql_query(query, engine)
+    
+    if df.empty:
+        return pd.DataFrame()
+        
+    # Pivot table: Dates as index, Tickers as columns, Close prices as values
+    price_matrix = df.pivot(index='date', columns='ticker', values='close')
+    
+    # Calculate daily returns and drop missing values
+    returns_matrix = price_matrix.pct_change().dropna(how='all')
+    
+    # Generate correlation matrix (-1.0 to 1.0)
+    return returns_matrix.corr()
+</file>
+
+<file path="backend/app/analytics/risk_metrics.py">
+import pandas as pd
+import numpy as np
+
+def daily_returns(prices: pd.Series) -> pd.Series:
+    """Calculates daily percentage change from a closing price series."""
+    return prices.pct_change().dropna()
+
+def annualized_volatility(returns: pd.Series) -> float:
+    """Calculates annualized standard deviation of daily returns."""
+    if len(returns) < 2:
+        return np.nan
+    return float(returns.std() * np.sqrt(252))
+
+def sharpe_ratio(returns: pd.Series, risk_free_rate: float = 0.065) -> float:
+    """
+    Calculates annualized Sharpe Ratio.
+    Formula: (Mean Daily Excess Return / Daily Volatility) * sqrt(252)
+    """
+    if len(returns) < 2:
+        return np.nan
+    
+    daily_rf = risk_free_rate / 252
+    excess_returns = returns - daily_rf
+    std_dev = excess_returns.std()
+    
+    if std_dev == 0 or np.isnan(std_dev):
+        return 0.0
+        
+    return float((excess_returns.mean() / std_dev) * np.sqrt(252))
+
+def sortino_ratio(returns: pd.Series, risk_free_rate: float = 0.065) -> float:
+    """
+    Calculates annualized Sortino Ratio (penalizes only downside volatility).
+    """
+    if len(returns) < 2:
+        return np.nan
+        
+    daily_rf = risk_free_rate / 252
+    excess_returns = returns - daily_rf
+    
+    # Isolate negative excess returns for downside deviation
+    downside = excess_returns[excess_returns < 0]
+    
+    if len(downside) < 1:
+        return 0.0
+        
+    downside_std = downside.std()
+    if downside_std == 0 or np.isnan(downside_std):
+        return 0.0
+        
+    return float((excess_returns.mean() / downside_std) * np.sqrt(252))
+
+def max_drawdown(prices: pd.Series) -> float:
+    """Calculates the maximum percentage drop from a peak to a trough."""
+    if len(prices) < 2:
+        return np.nan
+    rolling_max = prices.cummax()
+    drawdowns = (prices - rolling_max) / rolling_max
+    return float(drawdowns.min())
+</file>
+
+<file path="backend/app/analytics/save_metrics.py">
+import os
+import pandas as pd
+from datetime import datetime, timezone
+from sqlalchemy import create_engine, text
+from dotenv import load_dotenv
+from app.analytics.risk_metrics import daily_returns, sharpe_ratio, sortino_ratio, annualized_volatility, max_drawdown
+
+load_dotenv()
+engine = create_engine(os.getenv("DATABASE_URL"))
+
+def update_all_instrument_metrics():
+    """
+    Calculates risk metrics for all tracked instruments and inserts them into computed_metrics.
+    """
+    print("\n--- 💾 CALCULATING & SAVING METRICS TO DATABASE ---")
+    
+    with engine.connect() as conn:
+        instruments = conn.execute(text("SELECT id, ticker FROM instruments")).fetchall()
+        
+        total_inserted = 0
+        for inst_id, ticker in instruments:
+            query = text("SELECT close FROM daily_prices WHERE instrument_id = :id ORDER BY date ASC")
+            df = pd.read_sql_query(query, engine, params={"id": inst_id})
+            
+            if len(df) < 5:
+                continue
+                
+            returns = daily_returns(df['close'])
+            
+            # Map metrics to compute
+            metrics_map = {
+                "sharpe_ratio": sharpe_ratio(returns),
+                "sortino_ratio": sortino_ratio(returns),
+                "annualized_volatility": annualized_volatility(returns),
+                "max_drawdown": max_drawdown(df['close'])
+            }
+            
+            for m_name, m_val in metrics_map.items():
+                if pd.isna(m_val):
+                    continue
+                    
+                # Insert calculated metric into computed_metrics table
+                insert_sql = text("""
+                    INSERT INTO computed_metrics 
+                        (portfolio_id, instrument_id, metric_name, value, computed_at, formula_version)
+                    VALUES 
+                        (NULL, :inst_id, :name, :val, :now, 'v1');
+                """)
+                
+                conn.execute(insert_sql, {
+                    "inst_id": inst_id,
+                    "name": m_name,
+                    "val": float(m_val),
+                    "now": datetime.now(timezone.utc)
+                })
+                total_inserted += 1
+                
+        conn.commit()
+        print(f"✅ Successfully inserted {total_inserted} new metric records into Supabase!")
+
+if __name__ == "__main__":
+    update_all_instrument_metrics()
+</file>
+
+<file path="backend/app/analytics/test_analytics.py">
+import os
+import pandas as pd
+from sqlalchemy import create_engine, text
+from dotenv import load_dotenv
+from app.analytics.risk_metrics import daily_returns, sharpe_ratio, sortino_ratio, annualized_volatility, max_drawdown
+from app.analytics.correlation import get_correlation_matrix
+
+load_dotenv()
+engine = create_engine(os.getenv("DATABASE_URL"))
+
+def run_sanity_check():
+    print("--- 🔬 RUNNING ANALYTICS SANITY CHECK ---")
+    
+    with engine.connect() as conn:
+        instruments = conn.execute(text("SELECT id, ticker, name FROM instruments")).fetchall()
+    
+    results = []
+    for inst_id, ticker, name in instruments:
+        query = text("SELECT date, close FROM daily_prices WHERE instrument_id = :id ORDER BY date ASC")
+        df = pd.read_sql_query(query, engine, params={"id": inst_id})
+        
+        if len(df) < 5:
+            continue
+            
+        prices = df['close']
+        returns = daily_returns(prices)
+        
+        results.append({
+            "Ticker": ticker,
+            "Days": len(prices),
+            "Vol (Ann)": f"{annualized_volatility(returns)*100:.2f}%",
+            "Sharpe": f"{sharpe_ratio(returns):.2f}",
+            "Sortino": f"{sortino_ratio(returns):.2f}",
+            "Max DD": f"{max_drawdown(prices)*100:.2f}%"
+        })
+        
+    metrics_df = pd.DataFrame(results)
+    if not metrics_df.empty:
+        print("\n📊 RISK METRICS SUMMARY:")
+        print(metrics_df.to_string(index=False))
+    else:
+        print("⚠️ Not enough price data yet. Run ingestion first!")
+        
+    print("\n🔗 CORRELATION MATRIX (Top 5x5):")
+    corr_df = get_correlation_matrix(engine)
+    if not corr_df.empty:
+        print(corr_df.iloc[:5, :5].round(2))
+
+if __name__ == "__main__":
+    run_sanity_check()
+</file>
+
+<file path="backend/app/api/__init__.py">
+
+</file>
+
+<file path="backend/app/api/deps.py">
+import os
+import httpx
+from fastapi import Depends, HTTPException, status
+from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker, Session
+from jose import jwt, JWTError
+from dotenv import load_dotenv
+
+load_dotenv()
+
+DATABASE_URL = os.getenv("DATABASE_URL")
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+
+# Create SQLAlchemy Engine and Session
+engine = create_engine(DATABASE_URL, pool_pre_ping=True)
+SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+
+def get_db():
+    """Provides a transactional database session for API endpoints."""
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+
+# Bearer Token security scheme for OpenAPI docs
+security = HTTPBearer()
+
+# Cache for JWKS keys so we don't fetch from Supabase on every single API request
+JWKS_CACHE = None
+
+def get_jwks():
+    """Fetches and caches the JSON Web Key Set (JWKS) from Supabase."""
+    global JWKS_CACHE
+    if JWKS_CACHE is None:
+        if not SUPABASE_URL:
+            raise HTTPException(
+                status_code=500, 
+                detail="SUPABASE_URL is missing from environment variables."
+            )
+        jwks_url = f"{SUPABASE_URL}/rest/v1/auth/jwks"
+        try:
+            with httpx.Client() as client:
+                response = client.get(jwks_url)
+                response.raise_for_status()
+                JWKS_CACHE = response.json()
+        except Exception as e:
+            raise HTTPException(
+                status_code=500, 
+                detail=f"Failed to fetch JWKS from Supabase: {str(e)}"
+            )
+    return JWKS_CACHE
+
+def get_current_user(credentials: HTTPAuthorizationCredentials = Depends(security)) -> dict:
+    """
+    Verifies the Supabase JWT token using the JWKS public keys.
+    Supports Supabase's new asymmetric JWT Signing Keys (ES256/RS256).
+    """
+    token = credentials.credentials
+    jwks = get_jwks()
+    
+    try:
+        # Decode the unverified header to get the Key ID (kid) and algorithm
+        unverified_header = jwt.get_unverified_header(token)
+        rsa_key = {}
+        for key in jwks.get("keys", []):
+            if key["kid"] == unverified_header.get("kid"):
+                rsa_key = key
+                break
+                
+        if not rsa_key:
+            # If key ID wasn't found, clear cache and retry once in case keys rotated
+            global JWKS_CACHE
+            JWKS_CACHE = None
+            raise JWTError("Public key not found in JWKS.")
+
+        # Verify the token against the matching public key
+        payload = jwt.decode(
+            token,
+            rsa_key,
+            algorithms=[unverified_header.get("alg", "ES256")],
+            options={"verify_aud": False}  # Set True and aud="authenticated" in strict production
+        )
+        
+        user_id: str = payload.get("sub")
+        if user_id is None:
+            raise HTTPException(status_code=401, detail="Invalid token payload: missing subject.")
+            
+        return payload
+
+    except JWTError as e:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Could not validate credentials. Token may be expired or invalid.",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+</file>
+
+<file path="backend/app/api/routes_analytics.py">
+from fastapi import APIRouter, Depends, HTTPException
+from sqlalchemy.orm import Session
+from sqlalchemy import text
+from app.api.deps import get_db, engine
+from app.analytics.correlation import get_correlation_matrix
+
+router = APIRouter(prefix="/analytics", tags=["Analytics Engine"])
+
+@router.get("/portfolio/{portfolio_id}")
+def get_portfolio_analytics(portfolio_id: int, db: Session = Depends(get_db)):
+    """Retrieve pre-computed risk metrics (Sharpe, Sortino, Drawdown) for a portfolio."""
+    query = text("""
+        SELECT metric_name, value, computed_at, formula_version 
+        FROM computed_metrics 
+        WHERE portfolio_id = :pid
+        ORDER BY computed_at DESC
+    """)
+    result = db.execute(query, {"pid": portfolio_id}).mappings().fetchall()
+    
+    if not result:
+        raise HTTPException(status_code=404, detail="No computed metrics found for this portfolio ID.")
+        
+    return [dict(row) for row in result]
+
+@router.get("/correlation")
+def get_market_correlation():
+    """Generates and returns the full daily returns correlation matrix across all instruments."""
+    try:
+        corr_df = get_correlation_matrix(engine)
+        if corr_df.empty:
+            return {"message": "Not enough price data to compute correlation matrix."}
+        
+        # Replace NaN values with None for clean JSON serialization
+        corr_clean = corr_df.where(corr_df.notnull(), None)
+        return corr_clean.to_dict()
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to calculate correlation matrix: {str(e)}")
+</file>
+
+<file path="backend/app/api/routes_market.py">
+from fastapi import APIRouter, Depends, HTTPException
+from sqlalchemy.orm import Session
+from sqlalchemy import text
+from app.api.deps import get_db
+
+router = APIRouter(prefix="/market", tags=["Market Data"])
+
+@router.get("/instruments")
+def get_instruments(db: Session = Depends(get_db)):
+    """Fetch all tracked stock instruments from the universe."""
+    # Removed 'asset_class' and 'sector' to match your exact Supabase table schema
+    query = text("SELECT id, ticker, name FROM instruments ORDER BY ticker ASC")
+    result = db.execute(query).mappings().fetchall()
+    return [dict(row) for row in result]
+
+@router.get("/prices/{ticker}")
+def get_prices(ticker: str, limit: int = 252, db: Session = Depends(get_db)):
+    """Fetch recent historical daily closing prices for a specific ticker."""
+    query = text("""
+        SELECT dp.date, dp.open, dp.high, dp.low, dp.close, dp.volume 
+        FROM daily_prices dp
+        JOIN instruments i ON dp.instrument_id = i.id
+        WHERE i.ticker = :ticker
+        ORDER BY dp.date DESC
+        LIMIT :limit
+    """)
+    result = db.execute(query, {"ticker": ticker.upper(), "limit": limit}).mappings().fetchall()
+    
+    if not result:
+        raise HTTPException(status_code=404, detail=f"No price history found for ticker '{ticker}'")
+        
+    return [dict(row) for row in result]
+</file>
+
+<file path="backend/app/api/routes_portfolio.py">
+from fastapi import APIRouter, Depends, HTTPException, status
+from sqlalchemy.orm import Session
+from sqlalchemy import text
+from pydantic import BaseModel
+from app.api.deps import get_db, get_current_user
+
+router = APIRouter(prefix="/portfolios", tags=["Portfolios & Holdings"])
+
+# Pydantic Request Schemas
+class PortfolioCreate(BaseModel):
+    name: str
+    description: str | None = None
+
+class HoldingCreate(BaseModel):
+    ticker: str
+    quantity: float
+    average_buy_price: float
+
+@router.post("", status_code=status.HTTP_201_CREATED)
+def create_portfolio(
+    payload: PortfolioCreate, 
+    db: Session = Depends(get_db), 
+    user: dict = Depends(get_current_user)
+):
+    """Create a new portfolio tied to the authenticated user's UUID."""
+    user_id = user["sub"]
+    query = text("""
+        INSERT INTO portfolios (user_id, name, description) 
+        VALUES (:uid, :name, :desc) 
+        RETURNING id, name, description, created_at
+    """)
+    result = db.execute(query, {"uid": user_id, "name": payload.name, "desc": payload.description}).mappings().first()
+    db.commit()
+    return dict(result)
+
+@router.get("")
+def get_user_portfolios(db: Session = Depends(get_db), user: dict = Depends(get_current_user)):
+    """Fetch all portfolios owned by the authenticated user."""
+    user_id = user["sub"]
+    query = text("SELECT id, name, description, created_at FROM portfolios WHERE user_id = :uid")
+    result = db.execute(query, {"uid": user_id}).mappings().fetchall()
+    return [dict(row) for row in result]
+
+@router.post("/{portfolio_id}/holdings", status_code=status.HTTP_201_CREATED)
+def add_holding(
+    portfolio_id: int, 
+    payload: HoldingCreate, 
+    db: Session = Depends(get_db), 
+    user: dict = Depends(get_current_user)
+):
+    """Add a stock holding to a specific portfolio."""
+    # 1. Verify portfolio ownership
+    owner_check = text("SELECT id FROM portfolios WHERE id = :pid AND user_id = :uid")
+    if not db.execute(owner_check, {"pid": portfolio_id, "uid": user["sub"]}).first():
+        raise HTTPException(status_code=403, detail="Not authorized to modify this portfolio.")
+        
+    # 2. Resolve Ticker to Instrument ID
+    inst_query = text("SELECT id FROM instruments WHERE ticker = :ticker")
+    inst = db.execute(inst_query, {"ticker": payload.ticker.upper()}).first()
+    if not inst:
+        raise HTTPException(status_code=404, detail=f"Instrument '{payload.ticker}' not found in database.")
+        
+    # 3. Insert Holding
+    insert_sql = text("""
+        INSERT INTO holdings (portfolio_id, instrument_id, quantity, average_buy_price)
+        VALUES (:pid, :iid, :qty, :price)
+        RETURNING id, portfolio_id, instrument_id, quantity, average_buy_price
+    """)
+    result = db.execute(insert_sql, {
+        "pid": portfolio_id, 
+        "iid": inst[0], 
+        "qty": payload.quantity, 
+        "price": payload.average_buy_price
+    }).mappings().first()
+    db.commit()
+    return dict(result)
+
+@router.get("/{portfolio_id}/holdings")
+def get_holdings(portfolio_id: int, db: Session = Depends(get_db), user: dict = Depends(get_current_user)):
+    """Fetch all stock holdings inside a specific portfolio."""
+    query = text("""
+        SELECT h.id, i.ticker, i.name, h.quantity, h.average_buy_price 
+        FROM holdings h
+        JOIN instruments i ON h.instrument_id = i.id
+        JOIN portfolios p ON h.portfolio_id = p.id
+        WHERE h.portfolio_id = :pid AND p.user_id = :uid
+    """)
+    result = db.execute(query, {"pid": portfolio_id, "uid": user["sub"]}).mappings().fetchall()
+    return [dict(row) for row in result]
+</file>
+
+<file path="backend/app/ingestion/__init__.py">
+
+</file>
+
+<file path="backend/app/ingestion/alpha_vantage_client.py">
+import os
+import requests
+from dotenv import load_dotenv
+
+# Load environment variables from the root .env file
+load_dotenv()
+
+API_KEY = os.getenv("ALPHA_VANTAGE_KEY")
+BASE = "https://www.alphavantage.co/query"
+
+def fetch_daily(ticker: str):
+    """
+    Fetches daily time series data for a given ticker from Alpha Vantage.
+    """
+    if not API_KEY:
+        raise ValueError("ALPHA_VANTAGE_KEY is missing from your .env file!")
+        
+    params = {
+        "function": "TIME_SERIES_DAILY",
+        "symbol": ticker,
+        "outputsize": "compact",
+        "apikey": API_KEY,
+    }
+    
+    print(f"[{ticker}] Calling Alpha Vantage API...")
+    resp = requests.get(BASE, params=params)
+    resp.raise_for_status()
+    
+    raw_json = resp.json()
+    
+    # Handle API rate limit error messages safely
+    if "Information" in raw_json:
+        print(f"[{ticker}] Rate limit note from API: {raw_json['Information']}")
+        return {}
+    if "Note" in raw_json:
+        print(f"[{ticker}] API Note: {raw_json['Note']}")
+        return {}
+        
+    data = raw_json.get("Time Series (Daily)", {})
+    return data
+</file>
+
+<file path="backend/app/ingestion/run_daily_ingestion.py">
+from app.analytics.save_metrics import update_all_instrument_metrics
+import os
+import time
+from datetime import datetime
+from dotenv import load_dotenv
+from sqlalchemy import create_engine, text
+from app.ingestion.alpha_vantage_client import fetch_daily
+
+load_dotenv()
+
+DATABASE_URL = os.getenv("DATABASE_URL")
+if not DATABASE_URL:
+    raise ValueError("DATABASE_URL is missing from your .env file!")
+
+# Create the SQLAlchemy engine
+engine = create_engine(DATABASE_URL)
+
+def run():
+    print("Starting Daily Ingestion Job...")
+    
+    with engine.connect() as conn:
+        # 1. Fetch our instruments from the database
+        # Note: We limit to 5 per run initially to strictly respect Alpha Vantage's free tier!
+        instruments = conn.execute(
+            text("SELECT id, ticker FROM instruments ORDER BY id LIMIT 5")
+        ).fetchall()
+        
+        print(f"Found {len(instruments)} instruments to process today.")
+        
+        for inst_id, ticker in instruments:
+            try:
+                # 2. Fetch price data from Alpha Vantage
+                daily_data = fetch_daily(ticker)
+                
+                if not daily_data:
+                    print(f"[{ticker}] No price data returned. Skipping...")
+                    continue
+                
+                rows_inserted = 0
+                
+                # 3. Loop through the returned dates and prepare SQL insert
+                for date_str, values in daily_data.items():
+                    # Parse the string date into a Python date object
+                    price_date = datetime.strptime(date_str, "%Y-%m-%d").date()
+                    
+                    # Prepare our upsert query (insert or update if date already exists)
+                    upsert_query = text("""
+                        INSERT INTO daily_prices 
+                            (instrument_id, date, open, high, low, close, volume)
+                        VALUES 
+                            (:inst_id, :date, :open, :high, :low, :close, :volume)
+                        ON CONFLICT (instrument_id, date) 
+                        DO UPDATE SET
+                            open = EXCLUDED.open,
+                            high = EXCLUDED.high,
+                            low = EXCLUDED.low,
+                            close = EXCLUDED.close,
+                            volume = EXCLUDED.volume;
+                    """)
+                    
+                    conn.execute(upsert_query, {
+                        "inst_id": inst_id,
+                        "date": price_date,
+                        "open": float(values["1. open"]),
+                        "high": float(values["2. high"]),
+                        "low": float(values["3. low"]),
+                        "close": float(values["4. close"]),
+                        "volume": int(values["5. volume"]),
+                    })
+                    rows_inserted += 1
+                
+                # Commit all inserted dates for this stock
+                conn.commit()
+                print(f"[{ticker}] Successfully upserted {rows_inserted} days of price data!")
+                
+            except Exception as e:
+                print(f"[{ticker}] Error processing: {e}")
+                
+            # 4. Sleep for 15 seconds between API requests to respect rate limits
+            print("Sleeping for 15 seconds to respect Alpha Vantage API limits...\n")
+            time.sleep(15)
+        update_all_instrument_metrics()
+    print("Daily ingestion and analytics pipeline complete!")
+
+if __name__ == "__main__":
+    run()
+</file>
+
+<file path="backend/app/__init__.py">
+
+</file>
+
+<file path="frontend/public/file.svg">
+<svg fill="none" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M14.5 13.5V5.41a1 1 0 0 0-.3-.7L9.8.29A1 1 0 0 0 9.08 0H1.5v13.5A2.5 2.5 0 0 0 4 16h8a2.5 2.5 0 0 0 2.5-2.5m-1.5 0v-7H8v-5H3v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1M9.5 5V2.12L12.38 5zM5.13 5h-.62v1.25h2.12V5zm-.62 3h7.12v1.25H4.5zm.62 3h-.62v1.25h7.12V11z" clip-rule="evenodd" fill="#666" fill-rule="evenodd"/></svg>
+</file>
+
+<file path="frontend/public/globe.svg">
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.27 14.1a6.5 6.5 0 0 0 3.67-3.45q-1.24.21-2.7.34-.31 1.83-.97 3.1M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.48-1.52a7 7 0 0 1-.96 0H7.5a4 4 0 0 1-.84-1.32q-.38-.89-.63-2.08a40 40 0 0 0 3.92 0q-.25 1.2-.63 2.08a4 4 0 0 1-.84 1.31zm2.94-4.76q1.66-.15 2.95-.43a7 7 0 0 0 0-2.58q-1.3-.27-2.95-.43a18 18 0 0 1 0 3.44m-1.27-3.54a17 17 0 0 1 0 3.64 39 39 0 0 1-4.3 0 17 17 0 0 1 0-3.64 39 39 0 0 1 4.3 0m1.1-1.17q1.45.13 2.69.34a6.5 6.5 0 0 0-3.67-3.44q.65 1.26.98 3.1M8.48 1.5l.01.02q.41.37.84 1.31.38.89.63 2.08a40 40 0 0 0-3.92 0q.25-1.2.63-2.08a4 4 0 0 1 .85-1.32 7 7 0 0 1 .96 0m-2.75.4a6.5 6.5 0 0 0-3.67 3.44 29 29 0 0 1 2.7-.34q.31-1.83.97-3.1M4.58 6.28q-1.66.16-2.95.43a7 7 0 0 0 0 2.58q1.3.27 2.95.43a18 18 0 0 1 0-3.44m.17 4.71q-1.45-.12-2.69-.34a6.5 6.5 0 0 0 3.67 3.44q-.65-1.27-.98-3.1" fill="#666"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v16H0z"/></clipPath></defs></svg>
+</file>
+
+<file path="frontend/public/next.svg">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 394 80"><path fill="#000" d="M262 0h68.5v12.7h-27.2v66.6h-13.6V12.7H262V0ZM149 0v12.7H94v20.4h44.3v12.6H94v21h55v12.6H80.5V0h68.7zm34.3 0h-17.8l63.8 79.4h17.9l-32-39.7 32-39.6h-17.9l-23 28.6-23-28.6zm18.3 56.7-9-11-27.1 33.7h17.8l18.3-22.7z"/><path fill="#000" d="M81 79.3 17 0H0v79.3h13.6V17l50.2 62.3H81Zm252.6-.4c-1 0-1.8-.4-2.5-1s-1.1-1.6-1.1-2.6.3-1.8 1-2.5 1.6-1 2.6-1 1.8.3 2.5 1a3.4 3.4 0 0 1 .6 4.3 3.7 3.7 0 0 1-3 1.8zm23.2-33.5h6v23.3c0 2.1-.4 4-1.3 5.5a9.1 9.1 0 0 1-3.8 3.5c-1.6.8-3.5 1.3-5.7 1.3-2 0-3.7-.4-5.3-1s-2.8-1.8-3.7-3.2c-.9-1.3-1.4-3-1.4-5h6c.1.8.3 1.6.7 2.2s1 1.2 1.6 1.5c.7.4 1.5.5 2.4.5 1 0 1.8-.2 2.4-.6a4 4 0 0 0 1.6-1.8c.3-.8.5-1.8.5-3V45.5zm30.9 9.1a4.4 4.4 0 0 0-2-3.3 7.5 7.5 0 0 0-4.3-1.1c-1.3 0-2.4.2-3.3.5-.9.4-1.6 1-2 1.6a3.5 3.5 0 0 0-.3 4c.3.5.7.9 1.3 1.2l1.8 1 2 .5 3.2.8c1.3.3 2.5.7 3.7 1.2a13 13 0 0 1 3.2 1.8 8.1 8.1 0 0 1 3 6.5c0 2-.5 3.7-1.5 5.1a10 10 0 0 1-4.4 3.5c-1.8.8-4.1 1.2-6.8 1.2-2.6 0-4.9-.4-6.8-1.2-2-.8-3.4-2-4.5-3.5a10 10 0 0 1-1.7-5.6h6a5 5 0 0 0 3.5 4.6c1 .4 2.2.6 3.4.6 1.3 0 2.5-.2 3.5-.6 1-.4 1.8-1 2.4-1.7a4 4 0 0 0 .8-2.4c0-.9-.2-1.6-.7-2.2a11 11 0 0 0-2.1-1.4l-3.2-1-3.8-1c-2.8-.7-5-1.7-6.6-3.2a7.2 7.2 0 0 1-2.4-5.7 8 8 0 0 1 1.7-5 10 10 0 0 1 4.3-3.5c2-.8 4-1.2 6.4-1.2 2.3 0 4.4.4 6.2 1.2 1.8.8 3.2 2 4.3 3.4 1 1.4 1.5 3 1.5 5h-5.8z"/></svg>
+</file>
+
+<file path="frontend/public/vercel.svg">
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1155 1000"><path d="m577.3 0 577.4 1000H0z" fill="#fff"/></svg>
+</file>
+
+<file path="frontend/public/window.svg">
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 2.5h13v10a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1zM0 1h16v11.5a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 0 12.5zm3.75 4.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5M7 4.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0m1.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5" fill="#666"/></svg>
+</file>
+
+<file path="frontend/src/app/lib/auth-context.tsx">
+'use client';
+
+import { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
+import type { Session, User } from '@supabase/supabase-js';
+import { supabase } from './supabaseClient';
+
+interface AuthContextValue {
+  user: User | null;
+  session: Session | null;
+  loading: boolean;
+  signOut: () => Promise<void>;
+}
+
+const AuthContext = createContext<AuthContextValue | undefined>(undefined);
+
+export function AuthProvider({ children }: { children: ReactNode }) {
+  const [session, setSession] = useState<Session | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    supabase.auth.getSession().then(({ data }) => {
+      setSession(data.session);
+      setLoading(false);
+    });
+
+    const { data: listener } = supabase.auth.onAuthStateChange((_event, newSession) => {
+      setSession(newSession);
+      setLoading(false);
+    });
+
+    return () => listener.subscription.unsubscribe();
+  }, []);
+
+  const signOut = async () => {
+    await supabase.auth.signOut();
+  };
+
+  return (
+    <AuthContext.Provider value={{ user: session?.user ?? null, session, loading, signOut }}>
+      {children}
+    </AuthContext.Provider>
+  );
+}
+
+export function useAuth() {
+  const ctx = useContext(AuthContext);
+  if (!ctx) throw new Error('useAuth must be used within an AuthProvider');
+  return ctx;
+}
+</file>
+
+<file path="frontend/src/app/lib/hooks.ts">
+'use client';
+
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
+import { fetchFromAPI } from './api';
+import type {
+  Portfolio,
+  Holding,
+  Instrument,
+  PricePoint,
+  ComputedMetric,
+  CorrelationMatrix,
+} from './types';
+
+// ---- Portfolios -----------------------------------------------------------
+
+export function usePortfolios() {
+  return useQuery({
+    queryKey: ['portfolios'],
+    queryFn: () => fetchFromAPI<Portfolio[]>('/portfolios'),
+  });
+}
+
+export function useCreatePortfolio() {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: (payload: { name: string; description?: string }) =>
+      fetchFromAPI<Portfolio>('/portfolios', {
+        method: 'POST',
+        body: JSON.stringify(payload),
+      }),
+    onSuccess: () => queryClient.invalidateQueries({ queryKey: ['portfolios'] }),
+  });
+}
+
+// ---- Holdings ---------------------------------------------------------
+
+export function useHoldings(portfolioId: number | null) {
+  return useQuery({
+    queryKey: ['holdings', portfolioId],
+    queryFn: () => fetchFromAPI<Holding[]>(`/portfolios/${portfolioId}/holdings`),
+    enabled: portfolioId !== null,
+  });
+}
+
+export function useAddHolding(portfolioId: number | null) {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: (payload: { ticker: string; quantity: number; average_buy_price: number }) =>
+      fetchFromAPI<Holding>(`/portfolios/${portfolioId}/holdings`, {
+        method: 'POST',
+        body: JSON.stringify(payload),
+      }),
+    onSuccess: () =>
+      queryClient.invalidateQueries({ queryKey: ['holdings', portfolioId] }),
+  });
+}
+
+// ---- Market -----------------------------------------------------------
+
+export function useInstruments() {
+  return useQuery({
+    queryKey: ['instruments'],
+    queryFn: () => fetchFromAPI<Instrument[]>('/market/instruments'),
+  });
+}
+
+export function usePrices(ticker: string | null, limit = 252) {
+  return useQuery({
+    queryKey: ['prices', ticker, limit],
+    queryFn: () => fetchFromAPI<PricePoint[]>(`/market/prices/${ticker}?limit=${limit}`),
+    enabled: !!ticker,
+  });
+}
+
+// ---- Analytics ----------------------------------------------------------
+
+export function usePortfolioAnalytics(portfolioId: number | null) {
+  return useQuery({
+    queryKey: ['analytics', 'portfolio', portfolioId],
+    queryFn: () => fetchFromAPI<ComputedMetric[]>(`/analytics/portfolio/${portfolioId}`),
+    enabled: portfolioId !== null,
+    retry: false, // backend 404s until metrics exist for this portfolio
+  });
+}
+
+export function useCorrelationMatrix() {
+  return useQuery({
+    queryKey: ['analytics', 'correlation'],
+    queryFn: () => fetchFromAPI<CorrelationMatrix | { message: string }>('/analytics/correlation'),
+  });
+}
+</file>
+
+<file path="frontend/src/app/lib/supabaseClient.ts">
+import { createClient } from '@supabase/supabase-js';
+
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
+
+export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+</file>
+
+<file path="frontend/src/app/lib/types.ts">
+// Mirrors the Pydantic / SQL row shapes returned by the FastAPI backend.
+
+export interface Portfolio {
+  id: number;
+  name: string;
+  description: string | null;
+  created_at: string;
+}
+
+export interface Holding {
+  id: number;
+  ticker: string;
+  name: string;
+  quantity: number;
+  average_buy_price: number;
+}
+
+export interface Instrument {
+  id: number;
+  ticker: string;
+  name: string;
+}
+
+export interface PricePoint {
+  date: string;
+  open: number;
+  high: number;
+  low: number;
+  close: number;
+  volume: number;
+}
+
+export interface ComputedMetric {
+  metric_name: string;
+  value: number;
+  computed_at: string;
+  formula_version: string;
+}
+
+// GET /analytics/correlation returns { ticker: { ticker: number | null } }
+export type CorrelationMatrix = Record<string, Record<string, number | null>>;
+</file>
+
+<file path="frontend/src/app/market/[ticker]/page.tsx">
+import Link from 'next/link';
+import { PriceChart } from '@/components/PriceChart';
+
+export default async function InstrumentPage({
+  params,
+}: {
+  params: Promise<{ ticker: string }>;
+}) {
+  const { ticker } = await params;
+  const upperTicker = ticker.toUpperCase();
+
+  return (
+    <main className="mx-auto w-full max-w-3xl flex-1 px-6 py-8">
+      <Link href="/market" className="mb-4 inline-block text-sm text-muted hover:text-accent">
+        ← All instruments
+      </Link>
+      <h1 className="mb-6 text-xl font-semibold">{upperTicker}</h1>
+      <PriceChart ticker={upperTicker} />
+    </main>
+  );
+}
+</file>
+
+<file path="frontend/src/app/market/page.tsx">
+'use client';
+
+import { useState } from 'react';
+import { InstrumentList } from '@/components/InstrumentList';
+import { PriceChart } from '@/components/PriceChart';
+
+export default function MarketPage() {
+  const [selectedTicker, setSelectedTicker] = useState<string | null>(null);
+
+  return (
+    <main className="mx-auto w-full max-w-6xl flex-1 px-6 py-8">
+      <h1 className="mb-6 text-xl font-semibold">Market</h1>
+
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-[320px_1fr]">
+        <InstrumentList selected={selectedTicker} onSelect={setSelectedTicker} />
+        <PriceChart ticker={selectedTicker} />
+      </div>
+    </main>
+  );
+}
+</file>
+
+<file path="frontend/src/lib/auth-context.tsx">
+'use client';
+
+import { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
+import type { Session, User } from '@supabase/supabase-js';
+import { supabase } from './supabaseClient';
+
+interface AuthContextValue {
+  user: User | null;
+  session: Session | null;
+  loading: boolean;
+  signOut: () => Promise<void>;
+}
+
+const AuthContext = createContext<AuthContextValue | undefined>(undefined);
+
+export function AuthProvider({ children }: { children: ReactNode }) {
+  const [session, setSession] = useState<Session | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    supabase.auth.getSession().then(({ data }) => {
+      setSession(data.session);
+      setLoading(false);
+    });
+
+    const { data: listener } = supabase.auth.onAuthStateChange((_event, newSession) => {
+      setSession(newSession);
+      setLoading(false);
+    });
+
+    return () => listener.subscription.unsubscribe();
+  }, []);
+
+  const signOut = async () => {
+    await supabase.auth.signOut();
+  };
+
+  return (
+    <AuthContext.Provider value={{ user: session?.user ?? null, session, loading, signOut }}>
+      {children}
+    </AuthContext.Provider>
+  );
+}
+
+export function useAuth() {
+  const ctx = useContext(AuthContext);
+  if (!ctx) throw new Error('useAuth must be used within an AuthProvider');
+  return ctx;
+}
+</file>
+
+<file path="frontend/src/lib/hooks.ts">
+'use client';
+
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
+import { fetchFromAPI } from './api';
+import type {
+  Portfolio,
+  Holding,
+  Instrument,
+  PricePoint,
+  ComputedMetric,
+  CorrelationMatrix,
+} from './types';
+
+// ---- Portfolios -----------------------------------------------------------
+
+export function usePortfolios() {
+  return useQuery({
+    queryKey: ['portfolios'],
+    queryFn: () => fetchFromAPI<Portfolio[]>('/portfolios'),
+  });
+}
+
+export function useCreatePortfolio() {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: (payload: { name: string; description?: string }) =>
+      fetchFromAPI<Portfolio>('/portfolios', {
+        method: 'POST',
+        body: JSON.stringify(payload),
+      }),
+    onSuccess: () => queryClient.invalidateQueries({ queryKey: ['portfolios'] }),
+  });
+}
+
+// ---- Holdings ---------------------------------------------------------
+
+export function useHoldings(portfolioId: number | null) {
+  return useQuery({
+    queryKey: ['holdings', portfolioId],
+    queryFn: () => fetchFromAPI<Holding[]>(`/portfolios/${portfolioId}/holdings`),
+    enabled: portfolioId !== null,
+  });
+}
+
+export function useAddHolding(portfolioId: number | null) {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: (payload: { ticker: string; quantity: number; average_buy_price: number }) =>
+      fetchFromAPI<Holding>(`/portfolios/${portfolioId}/holdings`, {
+        method: 'POST',
+        body: JSON.stringify(payload),
+      }),
+    onSuccess: () =>
+      queryClient.invalidateQueries({ queryKey: ['holdings', portfolioId] }),
+  });
+}
+
+// ---- Market -----------------------------------------------------------
+
+export function useInstruments() {
+  return useQuery({
+    queryKey: ['instruments'],
+    queryFn: () => fetchFromAPI<Instrument[]>('/market/instruments'),
+  });
+}
+
+export function usePrices(ticker: string | null, limit = 252) {
+  return useQuery({
+    queryKey: ['prices', ticker, limit],
+    queryFn: () => fetchFromAPI<PricePoint[]>(`/market/prices/${ticker}?limit=${limit}`),
+    enabled: !!ticker,
+  });
+}
+
+// ---- Analytics ----------------------------------------------------------
+
+export function usePortfolioAnalytics(portfolioId: number | null) {
+  return useQuery({
+    queryKey: ['analytics', 'portfolio', portfolioId],
+    queryFn: () => fetchFromAPI<ComputedMetric[]>(`/analytics/portfolio/${portfolioId}`),
+    enabled: portfolioId !== null,
+    retry: false, // backend 404s until metrics exist for this portfolio
+  });
+}
+
+export function useCorrelationMatrix() {
+  return useQuery({
+    queryKey: ['analytics', 'correlation'],
+    queryFn: () => fetchFromAPI<CorrelationMatrix | { message: string }>('/analytics/correlation'),
+  });
+}
+</file>
+
+<file path="frontend/src/lib/types.ts">
+// Mirrors the Pydantic / SQL row shapes returned by the FastAPI backend.
+
+export interface Portfolio {
+  id: number;
+  name: string;
+  description: string | null;
+  created_at: string;
+}
+
+export interface Holding {
+  id: number;
+  ticker: string;
+  name: string;
+  quantity: number;
+  average_buy_price: number;
+}
+
+export interface Instrument {
+  id: number;
+  ticker: string;
+  name: string;
+}
+
+export interface PricePoint {
+  date: string;
+  open: number;
+  high: number;
+  low: number;
+  close: number;
+  volume: number;
+}
+
+export interface ComputedMetric {
+  metric_name: string;
+  value: number;
+  computed_at: string;
+  formula_version: string;
+}
+
+// GET /analytics/correlation returns { ticker: { ticker: number | null } }
+export type CorrelationMatrix = Record<string, Record<string, number | null>>;
+</file>
+
+<file path="frontend/.gitignore">
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+</file>
+
+<file path="frontend/AGENTS.md">
+<!-- BEGIN:nextjs-agent-rules -->
+# This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
+<!-- END:nextjs-agent-rules -->
+</file>
+
+<file path="frontend/CLAUDE.md">
+@AGENTS.md
+</file>
+
+<file path="frontend/eslint.config.mjs">
+import { defineConfig, globalIgnores } from "eslint/config";
+import nextVitals from "eslint-config-next/core-web-vitals";
+import nextTs from "eslint-config-next/typescript";
+
+const eslintConfig = defineConfig([
+  ...nextVitals,
+  ...nextTs,
+  // Override default ignores of eslint-config-next.
+  globalIgnores([
+    // Default ignores of eslint-config-next:
+    ".next/**",
+    "out/**",
+    "build/**",
+    "next-env.d.ts",
+  ]),
+]);
+
+export default eslintConfig;
+</file>
+
+<file path="frontend/next.config.ts">
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  /* config options here */
+};
+
+export default nextConfig;
+</file>
+
+<file path="frontend/package.json">
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.110.7",
+    "@tanstack/react-query": "^5.101.3",
+    "next": "16.2.10",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "react-grid-layout": "^2.2.3",
+    "recharts": "^3.10.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/react-grid-layout": "^1.3.6",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.10",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
+</file>
+
+<file path="frontend/postcss.config.mjs">
+const config = {
+  plugins: {
+    "@tailwindcss/postcss": {},
+  },
+};
+
+export default config;
+</file>
+
+<file path="frontend/README.md">
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## Getting Started
+
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+</file>
+
+<file path="frontend/tsconfig.json">
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    "**/*.mts"
+  ],
+  "exclude": ["node_modules"]
+}
+</file>
+
+<file path="frontend/src/app/components/WatchlistWidget.tsx">
+'use client';
+
+import { useQuery } from '@tanstack/react-query';
+import { fetchFromAPI } from '@/app/lib/api';
+
+// Matches what GET /market/instruments actually returns (see routes_market.py:
+// "SELECT id, ticker, name FROM instruments" — no asset_class/sector column).
+interface Instrument {
+  id: number;
+  ticker: string;
+  name: string;
+}
+
+export default function WatchlistWidget() {
+  const { data: instruments, isLoading, error } = useQuery<Instrument[]>({
+    queryKey: ['instruments'],
+    queryFn: () => fetchFromAPI<Instrument[]>('/market/instruments'),
+  });
+
+  if (isLoading) return <div className="p-4 text-emerald-500 animate-pulse">Loading data streams...</div>;
+  if (error) return <div className="p-4 text-red-500">Error connecting to data feed.</div>;
+
+  return (
+    <div className="h-full w-full bg-slate-900 border border-slate-800 rounded-md p-4 overflow-auto flex flex-col">
+      <h2 className="text-emerald-500 font-mono text-sm font-bold uppercase tracking-wider mb-4 border-b border-slate-800 pb-2">
+        Active Watchlist
+      </h2>
+      <table className="w-full text-left text-sm font-mono text-slate-300">
+        <thead className="text-xs text-slate-500 uppercase bg-slate-950/50">
+          <tr>
+            <th className="px-4 py-2 rounded-tl-sm">Ticker</th>
+            <th className="px-4 py-2 rounded-tr-sm">Entity Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          {instruments?.map((stock) => (
+            <tr key={stock.id} className="border-b border-slate-800/50 hover:bg-slate-800 transition-colors">
+              <td className="px-4 py-3 font-semibold text-emerald-400">{stock.ticker}</td>
+              <td className="px-4 py-3">{stock.name}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+</file>
+
+<file path="frontend/src/app/dashboard/layout.tsx">
+'use client';
+
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import { useAuth } from '@/app/lib/auth-context';
+
+export default function DashboardLayout({ children }: { children: React.ReactNode }) {
+  const { user, loading } = useAuth();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (!loading && !user) {
+      router.replace('/login');
+    }
+  }, [loading, user, router]);
+
+  if (loading || !user) {
+    return (
+      <main className="flex flex-1 items-center justify-center">
+        <p className="text-sm text-muted">Loading…</p>
+      </main>
+    );
+  }
+
+  return <>{children}</>;
+}
+</file>
+
+<file path="frontend/src/app/dashboard/page.tsx">
+'use client';
+
+import { useEffect, useState } from 'react';
+import { Responsive, WidthProvider, type Layout } from 'react-grid-layout/legacy';
+import 'react-grid-layout/css/styles.css';
+import 'react-resizable/css/styles.css';
+
+import { usePortfolios } from '@/app/lib/hooks';
+import { PortfolioSwitcher } from '@/components/PortfolioSwitcher';
+import { HoldingsTable } from '@/components/HoldingsTable';
+import { MetricsPanel } from '@/components/MetricsPanel';
+import { CorrelationHeatmap } from '@/components/CorrelationHeatmap';
+
+const ResponsiveGridLayout = WidthProvider(Responsive);
+
+const layouts: { lg: Layout } = {
+  lg: [
+    { i: 'portfolios', x: 0, y: 0, w: 3, h: 6, minW: 2, minH: 4 },
+    { i: 'holdings', x: 3, y: 0, w: 6, h: 6, minW: 4, minH: 4 },
+    { i: 'metrics', x: 9, y: 0, w: 3, h: 6, minW: 3, minH: 4 },
+    { i: 'correlation', x: 0, y: 6, w: 12, h: 6, minW: 4, minH: 4 },
+  ],
+};
+
+export default function DashboardPage() {
+  const { data: portfolios, isLoading } = usePortfolios();
+  const [selectedId, setSelectedId] = useState<number | null>(null);
+
+  useEffect(() => {
+    if (!selectedId && portfolios && portfolios.length > 0) {
+      setSelectedId(portfolios[0].id);
+    }
+  }, [portfolios, selectedId]);
+
+  return (
+    <main className="mx-auto w-full max-w-6xl flex-1 px-6 py-8">
+      <h1 className="mb-6 text-xl font-semibold">Dashboard</h1>
+
+      {isLoading ? (
+        <p className="text-sm text-muted">Loading your portfolios…</p>
+      ) : (
+        <ResponsiveGridLayout
+          className="layout"
+          layouts={layouts}
+          breakpoints={{ lg: 1024, md: 768, sm: 0 }}
+          cols={{ lg: 12, md: 6, sm: 1 }}
+          rowHeight={40}
+          margin={[16, 16]}
+          draggableHandle=".drag-handle"
+        >
+          <div key="portfolios" className="flex flex-col">
+            <div className="drag-handle mb-1 cursor-move text-[10px] uppercase tracking-wide text-muted">
+              ⠿ drag
+            </div>
+            <PortfolioSwitcher
+              portfolios={portfolios ?? []}
+              selectedId={selectedId}
+              onSelect={setSelectedId}
+            />
+          </div>
+
+          <div key="holdings" className="flex flex-col">
+            <div className="drag-handle mb-1 cursor-move text-[10px] uppercase tracking-wide text-muted">
+              ⠿ drag
+            </div>
+            <HoldingsTable portfolioId={selectedId} />
+          </div>
+
+          <div key="metrics" className="flex flex-col">
+            <div className="drag-handle mb-1 cursor-move text-[10px] uppercase tracking-wide text-muted">
+              ⠿ drag
+            </div>
+            <MetricsPanel portfolioId={selectedId} />
+          </div>
+
+          <div key="correlation" className="flex flex-col">
+            <div className="drag-handle mb-1 cursor-move text-[10px] uppercase tracking-wide text-muted">
+              ⠿ drag
+            </div>
+            <CorrelationHeatmap />
+          </div>
+        </ResponsiveGridLayout>
+      )}
+    </main>
+  );
+}
+</file>
+
+<file path="frontend/src/app/login/page.tsx">
+'use client';
+
+import { useState, type FormEvent } from 'react';
+import { useRouter } from 'next/navigation';
+import { supabase } from '@/app/lib/supabaseClient';
+
+type Mode = 'signin' | 'signup';
+
+export default function LoginPage() {
+  const router = useRouter();
+  const [mode, setMode] = useState<Mode>('signin');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState<string | null>(null);
+  const [notice, setNotice] = useState<string | null>(null);
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleSubmit = async (e: FormEvent) => {
+    e.preventDefault();
+    setError(null);
+    setNotice(null);
+    setSubmitting(true);
+
+    try {
+      if (mode === 'signin') {
+        const { error: signInError } = await supabase.auth.signInWithPassword({
+          email,
+          password,
+        });
+        if (signInError) throw signInError;
+        router.push('/dashboard');
+      } else {
+        const { error: signUpError } = await supabase.auth.signUp({
+          email,
+          password,
+        });
+        if (signUpError) throw signUpError;
+        setNotice('Account created. Check your inbox to confirm your email, then sign in.');
+        setMode('signin');
+      }
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Something went wrong.');
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
+  return (
+    <main className="flex flex-1 items-center justify-center px-6">
+      <div className="w-full max-w-sm rounded-xl border border-border bg-surface p-8">
+        <div className="mb-6 flex gap-1 rounded-full border border-border p-1 text-sm">
+          {(['signin', 'signup'] as Mode[]).map((m) => (
+            <button
+              key={m}
+              type="button"
+              onClick={() => {
+                setMode(m);
+                setError(null);
+                setNotice(null);
+              }}
+              className={`flex-1 rounded-full py-1.5 transition-colors ${
+                mode === m ? 'bg-accent text-black' : 'text-muted hover:text-foreground'
+              }`}
+            >
+              {m === 'signin' ? 'Sign in' : 'Sign up'}
+            </button>
+          ))}
+        </div>
+
+        <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+          <label className="flex flex-col gap-1.5 text-sm">
+            Email
+            <input
+              type="email"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="rounded-lg border border-border bg-surface-2 px-3 py-2 outline-none focus:border-accent"
+              placeholder="you@example.com"
+            />
+          </label>
+
+          <label className="flex flex-col gap-1.5 text-sm">
+            Password
+            <input
+              type="password"
+              required
+              minLength={6}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className="rounded-lg border border-border bg-surface-2 px-3 py-2 outline-none focus:border-accent"
+              placeholder="••••••••"
+            />
+          </label>
+
+          {error && <p className="text-sm text-negative">{error}</p>}
+          {notice && <p className="text-sm text-positive">{notice}</p>}
+
+          <button
+            type="submit"
+            disabled={submitting}
+            className="mt-2 flex h-11 items-center justify-center rounded-full bg-accent font-medium text-black transition-opacity hover:opacity-90 disabled:opacity-50"
+          >
+            {submitting ? 'Please wait…' : mode === 'signin' ? 'Sign in' : 'Create account'}
+          </button>
+        </form>
+      </div>
+    </main>
+  );
+}
+</file>
+
+<file path="frontend/src/app/globals.css">
+@import "tailwindcss";
+
+:root {
+  --background: #0a0d11;
+  --surface: #12161c;
+  --surface-2: #171d25;
+  --border: rgba(237, 237, 237, 0.09);
+  --foreground: #e9ebee;
+  --muted: #8b93a1;
+  --accent: #4fb8ae;
+  --accent-soft: rgba(79, 184, 174, 0.14);
+  --positive: #3ecf8e;
+  --negative: #f0654f;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-positive: var(--positive);
+  --color-negative: var(--negative);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+.tabular {
+  font-family: var(--font-mono), monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 999px;
+}
+</file>
+
+<file path="frontend/src/app/layout.tsx">
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
+import { Providers } from "./providers";
+import { Navbar } from "@/components/Navbar";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export const metadata: Metadata = {
+  title: "Uncharted Atlas — Portfolio Analytics",
+  description:
+    "A free, self-hosted portfolio analytics terminal for the Indian market: Sharpe, Sortino, Treynor, and correlation, without the Bloomberg bill.",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable} dark h-full antialiased`}
+    >
+      <body className="min-h-full flex flex-col bg-background text-foreground">
+        <Providers>
+          <Navbar />
+          <div className="flex flex-1 flex-col">{children}</div>
+        </Providers>
+      </body>
+    </html>
+  );
+}
+</file>
+
+<file path="frontend/src/components/CorrelationHeatmap.tsx">
+'use client';
+
+import { useCorrelationMatrix } from '@/app/lib/hooks';
+import type { CorrelationMatrix } from '@/app/lib/types';
+
+function isMatrix(data: unknown): data is CorrelationMatrix {
+  return !!data && typeof data === 'object' && !('message' in (data as object));
+}
+
+function cellColor(value: number | null): string {
+  if (value === null || Number.isNaN(value)) return 'transparent';
+  // -1 -> negative color, 0 -> surface, 1 -> accent color, interpolated via opacity
+  const alpha = Math.min(1, Math.abs(value));
+  return value >= 0
+    ? `rgba(79, 184, 174, ${alpha * 0.8})`
+    : `rgba(240, 101, 79, ${alpha * 0.8})`;
+}
+
+export function CorrelationHeatmap() {
+  const { data, isLoading } = useCorrelationMatrix();
+
+  return (
+    <div className="rounded-xl border border-border bg-surface p-4">
+      <h2 className="mb-3 text-sm font-medium text-muted">Return Correlation</h2>
+
+      {isLoading ? (
+        <p className="text-sm text-muted">Loading…</p>
+      ) : !data || !isMatrix(data) ? (
+        <p className="text-sm text-muted">
+          Not enough price history yet to compute a correlation matrix.
+        </p>
+      ) : (
+        <div className="scrollbar-thin overflow-x-auto">
+          <table className="tabular border-separate border-spacing-0.5 text-xs">
+            <thead>
+              <tr>
+                <th />
+                {Object.keys(data).map((ticker) => (
+                  <th key={ticker} className="px-1.5 py-1 font-normal text-muted">
+                    {ticker}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {Object.entries(data).map(([rowTicker, row]) => (
+                <tr key={rowTicker}>
+                  <td className="pr-2 text-right font-normal text-muted">{rowTicker}</td>
+                  {Object.keys(data).map((colTicker) => {
+                    const value = row[colTicker];
+                    return (
+                      <td
+                        key={colTicker}
+                        title={value !== null ? value.toFixed(2) : 'n/a'}
+                        className="h-8 w-8 text-center"
+                        style={{ backgroundColor: cellColor(value) }}
+                      >
+                        {value !== null ? value.toFixed(1) : '—'}
+                      </td>
+                    );
+                  })}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+    </div>
+  );
+}
+</file>
+
+<file path="frontend/src/components/HoldingsTable.tsx">
+'use client';
+
+import { useState } from 'react';
+import { useHoldings, useAddHolding, useInstruments } from '@/app/lib/hooks';
+
+interface Props {
+  portfolioId: number | null;
+}
+
+export function HoldingsTable({ portfolioId }: Props) {
+  const { data: holdings, isLoading } = useHoldings(portfolioId);
+  const { data: instruments } = useInstruments();
+  const addHolding = useAddHolding(portfolioId);
+
+  const [ticker, setTicker] = useState('');
+  const [quantity, setQuantity] = useState('');
+  const [price, setPrice] = useState('');
+  const [error, setError] = useState<string | null>(null);
+
+  const handleAdd = async () => {
+    setError(null);
+    if (!ticker || !quantity || !price) return;
+    try {
+      await addHolding.mutateAsync({
+        ticker: ticker.toUpperCase(),
+        quantity: parseFloat(quantity),
+        average_buy_price: parseFloat(price),
+      });
+      setTicker('');
+      setQuantity('');
+      setPrice('');
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Could not add holding.');
+    }
+  };
+
+  if (!portfolioId) {
+    return (
+      <div className="rounded-xl border border-border bg-surface p-6 text-sm text-muted">
+        Select or create a portfolio to view holdings.
+      </div>
+    );
+  }
+
+  const totalValue =
+    holdings?.reduce((sum, h) => sum + h.quantity * h.average_buy_price, 0) ?? 0;
+
+  return (
+    <div className="rounded-xl border border-border bg-surface p-4">
+      <div className="mb-3 flex items-center justify-between">
+        <h2 className="text-sm font-medium text-muted">Holdings</h2>
+        <span className="tabular text-sm text-foreground">
+          ₹{totalValue.toLocaleString('en-IN', { maximumFractionDigits: 0 })}
+        </span>
+      </div>
+
+      <div className="mb-4 grid grid-cols-4 gap-2">
+        <input
+          list="instrument-tickers"
+          value={ticker}
+          onChange={(e) => setTicker(e.target.value)}
+          placeholder="Ticker"
+          className="col-span-1 rounded-lg border border-border bg-surface-2 px-2 py-1.5 text-sm outline-none focus:border-accent"
+        />
+        <datalist id="instrument-tickers">
+          {instruments?.map((i) => (
+            <option key={i.id} value={i.ticker}>
+              {i.name}
+            </option>
+          ))}
+        </datalist>
+        <input
+          value={quantity}
+          onChange={(e) => setQuantity(e.target.value)}
+          placeholder="Qty"
+          type="number"
+          className="rounded-lg border border-border bg-surface-2 px-2 py-1.5 text-sm outline-none focus:border-accent"
+        />
+        <input
+          value={price}
+          onChange={(e) => setPrice(e.target.value)}
+          placeholder="Avg. buy price"
+          type="number"
+          className="rounded-lg border border-border bg-surface-2 px-2 py-1.5 text-sm outline-none focus:border-accent"
+        />
+        <button
+          onClick={handleAdd}
+          disabled={addHolding.isPending}
+          className="rounded-lg bg-accent px-2 py-1.5 text-sm font-medium text-black disabled:opacity-50"
+        >
+          Add
+        </button>
+      </div>
+
+      {error && <p className="mb-3 text-sm text-negative">{error}</p>}
+
+      {isLoading ? (
+        <p className="text-sm text-muted">Loading holdings…</p>
+      ) : !holdings || holdings.length === 0 ? (
+        <p className="text-sm text-muted">No holdings yet. Add your first position above.</p>
+      ) : (
+        <table className="w-full text-sm">
+          <thead>
+            <tr className="border-b border-border text-left text-xs text-muted">
+              <th className="py-2 font-normal">Ticker</th>
+              <th className="py-2 font-normal">Name</th>
+              <th className="py-2 text-right font-normal">Qty</th>
+              <th className="py-2 text-right font-normal">Avg. Price</th>
+              <th className="py-2 text-right font-normal">Value</th>
+            </tr>
+          </thead>
+          <tbody className="tabular">
+            {holdings.map((h) => (
+              <tr key={h.id} className="border-b border-border/50 last:border-0">
+                <td className="py-2 font-medium text-accent">{h.ticker}</td>
+                <td className="py-2 text-muted">{h.name}</td>
+                <td className="py-2 text-right">{h.quantity}</td>
+                <td className="py-2 text-right">₹{h.average_buy_price.toLocaleString('en-IN')}</td>
+                <td className="py-2 text-right">
+                  ₹{(h.quantity * h.average_buy_price).toLocaleString('en-IN', {
+                    maximumFractionDigits: 0,
+                  })}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )}
+    </div>
+  );
+}
+</file>
+
+<file path="frontend/src/components/InstrumentList.tsx">
+'use client';
+
+import { useState } from 'react';
+import { useInstruments } from '@/app/lib/hooks';
+
+interface Props {
+  selected: string | null;
+  onSelect: (ticker: string) => void;
+}
+
+export function InstrumentList({ selected, onSelect }: Props) {
+  const { data: instruments, isLoading } = useInstruments();
+  const [query, setQuery] = useState('');
+
+  const filtered = instruments?.filter(
+    (i) =>
+      i.ticker.toLowerCase().includes(query.toLowerCase()) ||
+      i.name.toLowerCase().includes(query.toLowerCase())
+  );
+
+  return (
+    <div className="rounded-xl border border-border bg-surface p-4">
+      <input
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        placeholder="Search instruments…"
+        className="mb-3 w-full rounded-lg border border-border bg-surface-2 px-3 py-1.5 text-sm outline-none focus:border-accent"
+      />
+
+      {isLoading ? (
+        <p className="text-sm text-muted">Loading…</p>
+      ) : !filtered || filtered.length === 0 ? (
+        <p className="text-sm text-muted">No instruments found.</p>
+      ) : (
+        <ul className="scrollbar-thin max-h-96 overflow-y-auto">
+          {filtered.map((i) => (
+            <li key={i.id}>
+              <button
+                onClick={() => onSelect(i.ticker)}
+                className={`flex w-full items-center justify-between rounded-lg px-3 py-2 text-left text-sm transition-colors ${
+                  i.ticker === selected ? 'bg-accent-soft text-accent' : 'hover:bg-surface-2'
+                }`}
+              >
+                <span className="font-medium">{i.ticker}</span>
+                <span className="truncate pl-3 text-xs text-muted">{i.name}</span>
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
+</file>
+
+<file path="frontend/src/components/MetricsPanel.tsx">
+'use client';
+
+import { usePortfolioAnalytics } from '@/app/lib/hooks';
+
+const LABELS: Record<string, string> = {
+  sharpe_ratio: 'Sharpe',
+  sortino_ratio: 'Sortino',
+  annualized_volatility: 'Ann. Volatility',
+  max_drawdown: 'Max Drawdown',
+};
+
+const PERCENT_METRICS = new Set(['annualized_volatility', 'max_drawdown']);
+
+interface Props {
+  portfolioId: number | null;
+}
+
+export function MetricsPanel({ portfolioId }: Props) {
+  const { data: metrics, isLoading, isError } = usePortfolioAnalytics(portfolioId);
+
+  if (!portfolioId) {
+    return (
+      <div className="rounded-xl border border-border bg-surface p-6 text-sm text-muted">
+        Select a portfolio to see risk metrics.
+      </div>
+    );
+  }
+
+  return (
+    <div className="rounded-xl border border-border bg-surface p-4">
+      <h2 className="mb-3 text-sm font-medium text-muted">Risk Metrics</h2>
+
+      {isLoading ? (
+        <p className="text-sm text-muted">Loading…</p>
+      ) : isError || !metrics || metrics.length === 0 ? (
+        <p className="text-sm text-muted">
+          No computed metrics yet for this portfolio. Metrics populate after the daily
+          ingestion + analytics job runs.
+        </p>
+      ) : (
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+          {metrics.map((m) => {
+            const isNegative = m.value < 0;
+            const label = LABELS[m.metric_name] ?? m.metric_name;
+            const display = PERCENT_METRICS.has(m.metric_name)
+              ? `${(m.value * 100).toFixed(2)}%`
+              : m.value.toFixed(2);
+            return (
+              <div key={m.metric_name} className="rounded-lg bg-surface-2 p-3">
+                <div className="text-xs text-muted">{label}</div>
+                <div
+                  className={`tabular mt-1 text-lg ${
+                    isNegative ? 'text-negative' : 'text-positive'
+                  }`}
+                >
+                  {display}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
+}
+</file>
+
+<file path="frontend/src/components/Navbar.tsx">
+'use client';
+
+import Link from 'next/link';
+import { usePathname, useRouter } from 'next/navigation';
+import { useAuth } from '@/app/lib/auth-context';
+
+export function Navbar() {
+  const { user, loading, signOut } = useAuth();
+  const pathname = usePathname();
+  const router = useRouter();
+
+  const links = [
+    { href: '/dashboard', label: 'Dashboard' },
+    { href: '/market', label: 'Market' },
+  ];
+
+  const handleSignOut = async () => {
+    await signOut();
+    router.push('/');
+  };
+
+  return (
+    <header className="border-b border-border bg-surface/80 backdrop-blur sticky top-0 z-30">
+      <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-6">
+        <Link href="/" className="flex items-center gap-2">
+          <span className="h-2 w-2 rounded-full bg-accent" />
+          <span className="font-semibold tracking-tight">Uncharted Atlas</span>
+        </Link>
+
+        <nav className="flex items-center gap-6 text-sm">
+          {user &&
+            links.map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className={
+                  pathname?.startsWith(l.href)
+                    ? 'text-foreground'
+                    : 'text-muted transition-colors hover:text-foreground'
+                }
+              >
+                {l.label}
+              </Link>
+            ))}
+
+          {loading ? null : user ? (
+            <button
+              onClick={handleSignOut}
+              className="rounded-full border border-border px-3 py-1.5 text-muted transition-colors hover:border-accent hover:text-foreground"
+            >
+              Sign out
+            </button>
+          ) : (
+            <Link
+              href="/login"
+              className="rounded-full bg-accent px-3 py-1.5 font-medium text-black transition-opacity hover:opacity-90"
+            >
+              Sign in
+            </Link>
+          )}
+        </nav>
+      </div>
+    </header>
+  );
+}
+</file>
+
+<file path="frontend/src/components/PortfolioSwitcher.tsx">
+'use client';
+
+import { useState } from 'react';
+import type { Portfolio } from '@/app/lib/types';
+import { useCreatePortfolio } from '@/app/lib/hooks';
+
+interface Props {
+  portfolios: Portfolio[];
+  selectedId: number | null;
+  onSelect: (id: number) => void;
+}
+
+export function PortfolioSwitcher({ portfolios, selectedId, onSelect }: Props) {
+  const [creating, setCreating] = useState(false);
+  const [name, setName] = useState('');
+  const createPortfolio = useCreatePortfolio();
+
+  const handleCreate = async () => {
+    if (!name.trim()) return;
+    const portfolio = await createPortfolio.mutateAsync({ name: name.trim() });
+    setName('');
+    setCreating(false);
+    onSelect(portfolio.id);
+  };
+
+  return (
+    <div className="rounded-xl border border-border bg-surface p-4">
+      <div className="mb-3 flex items-center justify-between">
+        <h2 className="text-sm font-medium text-muted">Portfolios</h2>
+        <button
+          onClick={() => setCreating((v) => !v)}
+          className="text-xs text-accent hover:underline"
+        >
+          {creating ? 'Cancel' : '+ New'}
+        </button>
+      </div>
+
+      {creating && (
+        <div className="mb-3 flex gap-2">
+          <input
+            autoFocus
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            onKeyDown={(e) => e.key === 'Enter' && handleCreate()}
+            placeholder="Portfolio name"
+            className="flex-1 rounded-lg border border-border bg-surface-2 px-2.5 py-1.5 text-sm outline-none focus:border-accent"
+          />
+          <button
+            onClick={handleCreate}
+            disabled={createPortfolio.isPending}
+            className="rounded-lg bg-accent px-3 py-1.5 text-sm font-medium text-black disabled:opacity-50"
+          >
+            Add
+          </button>
+        </div>
+      )}
+
+      {portfolios.length === 0 ? (
+        <p className="text-sm text-muted">
+          No portfolios yet — create one to start tracking holdings.
+        </p>
+      ) : (
+        <ul className="flex flex-col gap-1">
+          {portfolios.map((p) => (
+            <li key={p.id}>
+              <button
+                onClick={() => onSelect(p.id)}
+                className={`w-full rounded-lg px-3 py-2 text-left text-sm transition-colors ${
+                  p.id === selectedId
+                    ? 'bg-accent-soft text-accent'
+                    : 'text-foreground hover:bg-surface-2'
+                }`}
+              >
+                {p.name}
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
+</file>
+
+<file path="frontend/src/components/PriceChart.tsx">
+'use client';
+
+import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid } from 'recharts';
+import { usePrices } from '@/app/lib/hooks';
+
+interface Props {
+  ticker: string | null;
+}
+
+export function PriceChart({ ticker }: Props) {
+  const { data: prices, isLoading } = usePrices(ticker);
+
+  if (!ticker) {
+    return (
+      <div className="flex h-72 items-center justify-center rounded-xl border border-border bg-surface text-sm text-muted">
+        Select an instrument to view its price history.
+      </div>
+    );
+  }
+
+  if (isLoading) {
+    return (
+      <div className="flex h-72 items-center justify-center rounded-xl border border-border bg-surface text-sm text-muted">
+        Loading price history…
+      </div>
+    );
+  }
+
+  if (!prices || prices.length === 0) {
+    return (
+      <div className="flex h-72 items-center justify-center rounded-xl border border-border bg-surface text-sm text-muted">
+        No price history for {ticker} yet.
+      </div>
+    );
+  }
+
+  // API returns most-recent-first; chart wants chronological order.
+  const chartData = [...prices].reverse();
+  const latest = chartData[chartData.length - 1];
+  const first = chartData[0];
+  const changePct = ((latest.close - first.close) / first.close) * 100;
+
+  return (
+    <div className="rounded-xl border border-border bg-surface p-4">
+      <div className="mb-2 flex items-baseline justify-between">
+        <h2 className="text-sm font-medium text-muted">{ticker}</h2>
+        <div className="tabular text-right">
+          <div className="text-lg">₹{latest.close.toLocaleString('en-IN')}</div>
+          <div className={`text-xs ${changePct >= 0 ? 'text-positive' : 'text-negative'}`}>
+            {changePct >= 0 ? '+' : ''}
+            {changePct.toFixed(2)}% over period
+          </div>
+        </div>
+      </div>
+
+      <div className="h-64">
+        <ResponsiveContainer width="100%" height="100%">
+          <LineChart data={chartData} margin={{ top: 8, right: 8, left: 0, bottom: 0 }}>
+            <CartesianGrid stroke="var(--border)" vertical={false} />
+            <XAxis
+              dataKey="date"
+              tick={{ fontSize: 11, fill: 'var(--muted)' }}
+              tickFormatter={(d: string) => d.slice(5)}
+              minTickGap={40}
+            />
+            <YAxis
+              tick={{ fontSize: 11, fill: 'var(--muted)' }}
+              domain={['auto', 'auto']}
+              width={56}
+            />
+            <Tooltip
+              contentStyle={{
+                background: 'var(--surface-2)',
+                border: '1px solid var(--border)',
+                borderRadius: 8,
+                fontSize: 12,
+              }}
+            />
+            <Line
+              type="monotone"
+              dataKey="close"
+              stroke="var(--accent)"
+              strokeWidth={2}
+              dot={false}
+            />
+          </LineChart>
+        </ResponsiveContainer>
+      </div>
+    </div>
+  );
+}
+</file>
+
+<file path=".gitignore">
+node_modules/
+.env
+*.env
+__pycache__/
+.venv/
+*.pyc
+</file>
+
+<file path="backend/app/main.py">
+import os
+from fastapi import FastAPI, HTTPException, status, Depends,Security
+from fastapi.middleware.cors import CORSMiddleware
+from app.api import routes_market, routes_portfolio, routes_analytics
+from app.ingestion import run_daily_ingestion
+from app.analytics.save_metrics import update_all_instrument_metrics
+from fastapi.security import APIKeyHeader
+from fastapi.middleware.cors import CORSMiddleware
+
+# ... (your existing app setup and CORS middleware stay the same) ...
+# 1. INITIALIZE THE APP FIRST! (Must come before any @app routes)
+app = FastAPI(title="Uncharted Atlas API", version="1.0.0")
+# Add your live Vercel URL to this list!
+origins = [
+    "http://localhost:8000", # Keeps local development working
+    "https://uncharted-atlas.vercel.app/", # <-- PASTE YOUR VERCEL URL HERE
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+# 2. Setup your security header and dependencies
+api_key_header = APIKeyHeader(name="X-Ingestion-Secret", auto_error=False)
+
+def verify_ingestion_secret(api_key: str = Security(api_key_header)):
+    secret = os.getenv("INGESTION_SECRET")
+    if not secret or api_key != secret:
+        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Invalid Ingestion Secret")
+    return api_key
+
+@app.post("/internal/run-ingestion", tags=["Admin & Automation"])
+def trigger_ingestion(secret: str):
+    """
+    Protected webhook endpoint to trigger daily stock price ingestion and analytics calculation.
+    """
+    server_secret = os.getenv("INGESTION_SECRET")
+    if not server_secret or secret != server_secret:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN, 
+            detail="Invalid or missing INGESTION_SECRET."
+        )
+    
+    try:
+        # 1. Run stock price ingestion
+        run_daily_ingestion.run()
+        # 2. Run risk & Sortino/Sharpe analytics
+        update_all_instrument_metrics()
+        return {"status": "success", "message": "Daily ingestion and analytics completed cleanly."}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Pipeline failed: {str(e)}")
+</file>
+
+<file path="backend/requirements.txt">
+annotated-doc==0.0.4
+annotated-types==0.7.0
+anyio==4.14.2
+certifi==2026.6.17
+cffi==2.1.0
+charset-normalizer==3.4.9
+click==8.4.2
+colorama==0.4.6
+cryptography==49.0.0
+ecdsa==0.19.2
+fastapi==0.139.2
+greenlet==3.5.3
+h11==0.16.0
+httpcore==1.0.9
+httpx==0.28.1
+idna==3.18
+numpy==2.5.1
+pandas==3.0.3
+psycopg2-binary==2.9.12
+pyasn1==0.6.4
+pycparser==3.0
+pydantic==2.13.4
+pydantic_core==2.46.4
+python-dateutil==2.9.0.post0
+python-dotenv==1.2.2
+python-jose==3.5.0
+requests==2.34.2
+rsa==4.9.1
+scipy==1.18.0
+six==1.17.0
+SQLAlchemy==2.0.51
+starlette==1.3.1
+typing-inspection==0.4.2
+typing_extensions==4.16.0
+tzdata==2026.3
+urllib3==2.7.0
+uvicorn==0.51.0
+</file>
+
+<file path="frontend/src/app/lib/api.ts">
+import { supabase } from './supabaseClient';
+
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+
+/**
+ * Universal fetch wrapper that automatically attaches the Supabase Auth token.
+ */
+export async function fetchFromAPI<T>(endpoint: string, options: RequestInit = {}): Promise<T> {
+  // 1. Get the current user's active session token from Supabase
+  const { data: { session } } = await supabase.auth.getSession();
+  const token = session?.access_token;
+
+  // 2. Set up headers with authorization if the user is logged in
+  const headers: HeadersInit = {
+    'Content-Type': 'application/json',
+    ...(token && { Authorization: `Bearer ${token}` }),
+    ...options.headers,
+  };
+
+  // 3. Make the call to Railway
+  const response = await fetch(`${API_BASE_URL}${endpoint}`, {
+    ...options,
+    headers,
+  });
+
+  // 4. Handle errors gracefully
+  if (!response.ok) {
+    const errorData = await response.json().catch(() => ({}));
+    throw new Error(errorData.detail || `API Error: ${response.status} ${response.statusText}`);
+  }
+
+  return response.json();
+}
+</file>
+
+<file path="frontend/src/app/providers.tsx">
+'use client';
+
+import { useState, type ReactNode } from 'react';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { AuthProvider } from '@/app/lib/auth-context';
+
+export function Providers({ children }: { children: ReactNode }) {
+  const [queryClient] = useState(
+    () =>
+      new QueryClient({
+        defaultOptions: {
+          queries: {
+            staleTime: 60_000,
+            retry: 1,
+            refetchOnWindowFocus: false,
+          },
+        },
+      })
+  );
+
+  return (
+    <QueryClientProvider client={queryClient}>
+      <AuthProvider>{children}</AuthProvider>
+    </QueryClientProvider>
+  );
+}
+</file>
+
+<file path="frontend/src/app/page.tsx">
+import Link from "next/link";
+
+const metrics = [
+  { label: "Sharpe", detail: "Return per unit of total risk" },
+  { label: "Sortino", detail: "Return per unit of downside risk" },
+  { label: "Treynor", detail: "Return per unit of market risk" },
+  { label: "Correlation", detail: "Cross-instrument return relationships" },
+];
+
+export default function Home() {
+  return (
+    <main className="flex flex-1 flex-col items-center px-6">
+      <section className="flex w-full max-w-3xl flex-col items-center gap-8 pb-20 pt-28 text-center">
+        <span className="rounded-full border border-border bg-surface px-3 py-1 text-xs tracking-wide text-muted uppercase">
+          BSE-listed instruments · daily refresh
+        </span>
+
+        <h1 className="max-w-xl text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
+          A free portfolio analytics terminal for the Indian market
+        </h1>
+
+        <p className="max-w-md text-lg leading-8 text-muted">
+          Track holdings, compute risk-adjusted return metrics, and explore
+          correlations across instruments — no Bloomberg subscription
+          required.
+        </p>
+
+        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+          <Link
+            href="/login"
+            className="flex h-12 items-center justify-center rounded-full bg-accent px-6 text-black transition-opacity hover:opacity-90"
+          >
+            Get started
+          </Link>
+          <Link
+            href="/market"
+            className="flex h-12 items-center justify-center rounded-full border border-border px-6 transition-colors hover:border-accent"
+          >
+            Browse instruments
+          </Link>
+        </div>
+      </section>
+
+      <section className="grid w-full max-w-3xl grid-cols-2 gap-px overflow-hidden rounded-xl border border-border bg-border pb-24 sm:grid-cols-4">
+        {metrics.map((m) => (
+          <div key={m.label} className="bg-surface p-5">
+            <div className="tabular text-sm text-accent">{m.label}</div>
+            <div className="mt-1 text-xs text-muted">{m.detail}</div>
+          </div>
+        ))}
+      </section>
+    </main>
+  );
+}
+</file>
+
+</files>
