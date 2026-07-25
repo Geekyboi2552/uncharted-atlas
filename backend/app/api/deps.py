@@ -39,7 +39,7 @@ def get_jwks():
                 status_code=500, 
                 detail="SUPABASE_URL is missing from environment variables."
             )
-        jwks_url = f"{SUPABASE_URL}/auth/v1/jwks"
+        jwks_url = f"{SUPABASE_URL}/auth/v1/.well-known/jwks.json"
         try:
             with httpx.Client() as client:
                 response = client.get(jwks_url)
