@@ -49,6 +49,7 @@ def add_holding(
     user: dict = Depends(get_current_user)
 ):
     from app.main import trigger_ingestion
+    from app.api.routes_analytics import get_portfolio_analytics
     """Add a stock holding to a specific portfolio."""
     # 1. Verify portfolio ownership
     owner_check = text("SELECT id FROM portfolios WHERE id = :pid AND user_id = :uid")
@@ -74,6 +75,7 @@ def add_holding(
         "price": payload.average_buy_price
     }).mappings().first()
     db.commit()
+    get_portfolio_analytics(portfolio_id,db)
     background_tasks.add_task(trigger_ingestion)
     return dict(result)
 
