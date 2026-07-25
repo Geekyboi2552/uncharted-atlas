@@ -11,6 +11,16 @@ from fastapi.middleware.cors import CORSMiddleware
 # 1. INITIALIZE THE APP FIRST! (Must come before any @app routes)
 app = FastAPI(title="Uncharted Atlas API", version="1.0.0")
 # Add your live Vercel URL to this list!
+
+# 1. Accessing routes_portfolio
+app.include_router(routes_portfolio.router)
+
+# 2. Accessing routes_market
+app.include_router(routes_market.router)
+
+# 3. Accessing routes_analytics
+app.include_router(routes_analytics.router)
+
 origins = [
     "http://localhost:8000", # Keeps local development working
     "https://uncharted-atlas.vercel.app", # <-- PASTE YOUR VERCEL URL HERE
