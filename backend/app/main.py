@@ -16,7 +16,7 @@ app = FastAPI(title="Uncharted Atlas API", version="1.0.0")
 app.include_router(routes_portfolio.router)
 
 # 2. Accessing routes_market
-app.include_router(routes_market.router, prefix="/market")
+app.include_router(routes_market.router)
 
 # 3. Accessing routes_analytics
 app.include_router(routes_analytics.router)
