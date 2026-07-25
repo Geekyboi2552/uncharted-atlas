@@ -13,7 +13,7 @@ app = FastAPI(title="Uncharted Atlas API", version="1.0.0")
 # Add your live Vercel URL to this list!
 origins = [
     "http://localhost:8000", # Keeps local development working
-    "https://uncharted-atlas.vercel.app/", # <-- PASTE YOUR VERCEL URL HERE
+    "https://uncharted-atlas.vercel.app", # <-- PASTE YOUR VERCEL URL HERE
 ]
 
 app.add_middleware(
