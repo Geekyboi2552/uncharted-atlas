@@ -49,7 +49,7 @@ def add_holding(
     user: dict = Depends(get_current_user)
 ):
     from app.main import trigger_ingestion
-    from app.analytics.save_metrics import update_all_instrument_metrics
+    from app.analytics.save_metrics import update_portfolio_metrics
     from app.api.routes_analytics import get_portfolio_analytics
     """Add a stock holding to a specific portfolio."""
     # 1. Verify portfolio ownership
@@ -82,7 +82,7 @@ def add_holding(
             #trigger_ingestion() 
             
             print("🧠 Step 2: Starting analytics engine...")
-            update_all_instrument_metrics()
+            update_portfolio_metrics(portfolio_id)
             
             print("✅ Pipeline complete!")
         except Exception as e:
