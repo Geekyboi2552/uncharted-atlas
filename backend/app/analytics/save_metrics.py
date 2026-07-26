@@ -8,7 +8,7 @@ from app.analytics.risk_metrics import daily_returns, sharpe_ratio, sortino_rati
 load_dotenv()
 engine = create_engine(os.getenv("DATABASE_URL"))
 
-def update_portfolio_metrics(portfolio_id: int):
+def update_all_instrument_metrics(portfolio_id: int):
     """
     Calculates risk metrics for a specific portfolio based on its holdings
     and inserts them into computed_metrics.
