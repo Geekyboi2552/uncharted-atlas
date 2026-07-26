@@ -18,7 +18,7 @@ def update_all_instrument_metrics(portfolio_id: int):
     with engine.connect() as conn:
         # 1. Join holdings, instruments, and prices to calculate daily portfolio value
         query = text("""
-            SELECT dp.date, SUM(h.qty * dp.close) as portfolio_value
+            SELECT dp.date, SUM(h.quantity * dp.close) as portfolio_value
             FROM holdings h
             JOIN instruments i ON h.instrument_id = i.id
             JOIN daily_prices dp ON i.id = dp.instrument_id
