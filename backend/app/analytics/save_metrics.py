@@ -20,7 +20,7 @@ def update_all_instrument_metrics(portfolio_id: int):
         query = text("""
             SELECT dp.date, SUM(h.qty * dp.close) as portfolio_value
             FROM holdings h
-            JOIN instruments i ON h.ticker = i.ticker
+            JOIN instruments i ON h.instrument_id = i.id
             JOIN daily_prices dp ON i.id = dp.instrument_id
             WHERE h.portfolio_id = :pid
             GROUP BY dp.date
